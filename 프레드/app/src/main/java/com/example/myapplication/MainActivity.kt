@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myapplication.databinding.ActivityMainBinding
@@ -13,9 +14,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        binding.mainPlayerCl.setOnClickListener {
+            startActivity(Intent(this,SongActivity::class.java))
+        }
+
         setContentView(binding.root)
 
         initBottomNavigation()
+
+        binding.mainPlayerCl.setOnClickListener {
+
+            val intent = Intent(this,SongActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
