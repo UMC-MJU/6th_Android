@@ -19,8 +19,19 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         binding.homePannelAlbumBeenzinoIv.setOnClickListener {
-            (context as MainActivity).supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm,AlbumFragment())
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(
+                R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
+
+        }
+        binding.homePannelAlbumBigbang.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(
+                R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
+
+        }
+        binding.homePannelAlbumChangmo.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(
+                R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
+
         }
 
         return binding.root
