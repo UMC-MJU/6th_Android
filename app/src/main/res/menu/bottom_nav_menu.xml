@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_Fragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/lookaround_Fragment"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_lookaround" />
+
+    <item
+        android:id="@+id/search_Fragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_search" />
+
+    <item
+        android:id="@+id/storage_Fragment"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/title_storage" />
+
+</menu>
