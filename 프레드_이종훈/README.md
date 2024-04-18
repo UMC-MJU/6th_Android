@@ -1,4 +1,4 @@
-# 6th-Android
+# 6th-Android / 프레드_이종훈 님의 작업 폴더
 
 # 💚 UMC MJU 6th_Android
 
