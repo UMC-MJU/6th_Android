@@ -4,142 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c78df2b1-097d-4956-b004-3462d4c336cb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/도리_김민경/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/언스_김은솔/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/migrations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/androidTest/java/com/example/a6th_android/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/Song.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/Album/AlbumFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/home/HomeFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/home/HomeViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/lookaround/LookaroundFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/lookaround/LookaroundViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/search/SearchFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/search/SearchViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/song/SongActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/storage/StorageFragment.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/java/com/example/a6th_android/ui/storage/StorageViewModel.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btm_color_selector.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_actionbar_instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_arrow_black.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_main_arrow_more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_main_mike.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_main_setting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_main_ticket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplay_mvpause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplay_mvplay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplay_pause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplayer_go_list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplayer_next.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplayer_play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_miniplayer_previous.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_panel_play_large.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_eq_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_go_list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_more.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_related.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_setting.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_unlike_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_player_unlike_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_playlist_select_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_playlist_select_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_toggle_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/btn_toggle_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/discovery_banner_aos.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_home_no_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_home_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_locker_no_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_locker_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_look_no_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_look_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_search_no_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_bottom_search_select.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_home_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_main_facebook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_main_instagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_main_twitter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_main_youtube.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_my_like_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_my_like_on.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/ic_notifications_black_24dp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/icon_browse_arrow_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_album_exp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_album_exp2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_album_lp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_first_album_default.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_home_viewpager_exp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_home_viewpager_exp2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_potcast_exp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/img_video_exp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_pause_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_play_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_random_inactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_repeat_inactive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_skip_next_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/nugu_btn_skip_previous_32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/drawable/widget_black_play.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/activity_song.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/fragment_album.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/fragment_lookaround.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/fragment_search.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/layout/fragment_storage.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/app/src/test/java/com/example/a6th_android/ExampleUnitTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/우연_추연우/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/윤슬_이윤서/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/프레드_이종훈/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/해리_박상재/README.md" beforeDir="false" />
-    </list>
+    <list default="true" id="c78df2b1-097d-4956-b004-3462d4c336cb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,8 +56,8 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Public/Documents/UMC/6th_Android/우연_추연우/wooYeon"
+    "git-widget-placeholder": "우연/추연우",
+    "last_opened_file_path": "C:/Users/Public/Documents/UMC/6th_Android"
   }
 }]]></component>
   <component name="RunManager">
@@ -274,5 +139,16 @@
       <updated>1714311412200</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
