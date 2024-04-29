@@ -8,13 +8,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+<!--        <ImageView-->
+<!--            android:id="@+id/home_pannel_background_iv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="430dp"-->
+<!--            android:src="@drawable/img_first_album_default"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+        <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/home_pannel_background_iv"
             android:layout_width="match_parent"
             android:layout_height="430dp"
-            android:src="@drawable/img_first_album_default"
-            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:ci_drawable_unselected="@drawable/gray_radius"
+            app:ci_drawable="@drawable/blue_radius"
+            app:ci_animator="@animator/scale_with_alpha"
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
         <ImageView
@@ -73,9 +91,9 @@
             android:layout_marginTop="90dp"/>
         
         <ImageView
+            android:id="@+id/home_pannel_album_img_iv"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:id="@+id/home_pannel_album_img_iv"
             android:src="@drawable/aquaman"
             app:layout_constraintBottom_toTopOf="@id/home_pannel_album_img1_iv"
             app:layout_constraintStart_toStartOf="parent"

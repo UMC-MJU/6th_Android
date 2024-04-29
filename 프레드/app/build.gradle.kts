@@ -52,4 +52,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+//인디케이터 애니메이션 오픈소스
+    implementation("me.relex:circleindicator:2.1.6")
+
 }

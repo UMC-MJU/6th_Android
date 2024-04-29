@@ -1,14 +1,14 @@
 package com.example.myapplication
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.myapplication.databinding.FragmentBannerBinding
 
 
-class BannerFragment : Fragment() {
+class BannerFragment(val imgRes: Int) : Fragment() {
     lateinit var binding: FragmentBannerBinding
 
 
@@ -18,6 +18,9 @@ class BannerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentBannerBinding.inflate(inflater,container,false)
+
+       binding.bannerImageIv.setImageResource(imgRes)
+        //인자값으로 받은 이미지로 src의 이미지 값이 변경이 된다.
 
         return binding.root
     }
