@@ -1,4 +1,4 @@
-# 6th-Android / 도리_김민경 님의 작업 폴더
+# 6th-Android
 
 # 💚 UMC MJU 6th_Android
 
