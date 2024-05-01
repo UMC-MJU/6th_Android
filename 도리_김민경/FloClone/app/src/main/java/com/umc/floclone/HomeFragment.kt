@@ -54,20 +54,30 @@ class HomeFragment(homePannelCl: Int) : Fragment() {
 //        // Indicator에 ViewPager 설정
 //        binding.homePannelCi.setViewPager(binding.homePannelVp)
 
+
+        val viewPager2 : ViewPager2 = binding.homePannelVp
+        val circleIndicator3 : CircleIndicator3 = binding.homePannelCi
+
+        val adapter = BannerViewpagerAdapter(this)
+
+        viewPager2.adapter = adapter
+        circleIndicator3.setViewPager(viewPager2)
+        startAutoSlide(adapter)
+
         return binding.root
     }
 
-//    private fun startAutoSlide(adapter: BannerViewpagerAdapter) {
-//        // 3초마다 슬라이드 변경
-//        timer.scheduleAtFixedRate(3000, 3000) {
-//            handler.post {
-//                val nextItem = binding.homePannelVp.currentItem + 1
-//                if (nextItem < adapter.itemCount) {
-//                    binding.homePannelVp.currentItem = nextItem
-//                } else {
-//                    binding.homePannelVp.currentItem = 0    // 마지막 페이지 -> 첫 페이지
-//                }
-//            }
-//        }
-//    }
+    private fun startAutoSlide(adapter: BannerViewpagerAdapter) {
+        // 3초마다 슬라이드 변경
+        timer.scheduleAtFixedRate(3000, 3000) {
+            handler.post {
+                val nextItem = binding.homePannelVp.currentItem + 1
+                if (nextItem < adapter.itemCount) {
+                    binding.homePannelVp.currentItem = nextItem
+                } else {
+                    binding.homePannelVp.currentItem = 0    // 마지막 페이지 -> 첫 페이지
+                }
+            }
+        }
+    }
 }
