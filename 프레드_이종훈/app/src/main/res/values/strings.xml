@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="beenzino_1st_album_aquaman">BEENZINO 1st Album \'Aquaman\'</string>
+    <string name="beenzino">BEENZINO (빈지노)</string>
+    <string name="_2012_07_03">2012.07.03 | 정규 | 힙합</string>
+
+    <string name="detail_album_info">
+        Beenzino의 클래식 [2 4 : 2 6] 5주년 기념 리마스터 재발매!\n\n
+        2012년 여름에 발매되었던 Beenzino의 첫 솔로 앨범 [2 4 : 2 6]\n
+        [2 4 : 2 6]는 발매 직후 폭발적인 호응을 이끌어내며 Beenzino의 대표작으로 자리매김하였다.\n\n
+        [2 4 : 2 6]는 힙합 앨범으로써는 유례없는 성공을 거둠과 동시에 Beenzino를 세상에 널리 알린 작품이 되었으며, 5년이 지난 지금도 이 앨범의 영향력은 현재 진행형이다.\n\n
+        심지어 이 앨범의 CD 역시 그 인기가 식지 않아 지금까지도 번번이 품절 사태에 이르렀으니 한국 힙합 역사상 가장 사랑받는 앨범이 되었다고 해도 과언이 아닐 것이다.\n
+        이러한 [2 4 : 2 6]가 발매 5주년을 맞이하여 "5th Anniversary Remaster Edition"으로 돌아온다.\n\n
+        이번 리마스터 에디션은 세계적인 마스터링 엔지니어 Vlado Meller의 리마스터링을 거쳐 보다 향상된 사운드로 재탄생하였으며, 음반의 구성과 형태는 초판과 거의 동일하게 유지하여\n
+        원작의 감흥을 그대로 전한다.
+
+    </string>
+</resources>
