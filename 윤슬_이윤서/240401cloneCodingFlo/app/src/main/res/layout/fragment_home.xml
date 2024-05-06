@@ -7,15 +7,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/home_pannel_background_iv"
-            android:layout_width="match_parent"
-            android:layout_height="430dp"
-            android:src="@drawable/img_first_album_default"
-            android:scaleType="centerCrop"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
 
         <ImageView
             android:id="@+id/home_pannel_btn_nugu_iv"
@@ -47,29 +38,59 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_pannel_vp"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/home_pannel_background_iv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="430dp"-->
+<!--            android:src="@drawable/img_first_album_default"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/home_pannel_title_tv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="매혹적인 음색의 여성 보컬\n팝"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="28sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@id/home_pannel_btn_play_iv"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/home_pannel_btn_nugu_iv"/>-->
         <TextView
             android:id="@+id/home_pannel_title_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
             android:text="매혹적인 음색의 여성 보컬\n팝"
             android:textColor="@color/white"
             android:textSize="28sp"
-            android:textStyle="bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/home_pannel_btn_play_iv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_btn_nugu_iv"/>
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/home_pannel_btn_play_iv"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/btn_panel_play_large"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_title_tv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_btn_ticket_iv"/>
 
         <TextView
             android:id="@+id/home_pannel_album_info_tv"
@@ -91,7 +112,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginBottom="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/home_pannel_background_iv"/>
+            app:layout_constraintBottom_toBottomOf="@id/home_pannel_vp"/>
 
         <TextView
             android:id="@+id/home_pannel_album_title_tv"
@@ -127,7 +148,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginStart="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_vp"/>
 
         <ImageView
             android:layout_width="20dp"
@@ -137,7 +158,7 @@
             android:layout_marginStart="2dp"
             android:paddingTop="2dp"
             app:layout_constraintStart_toEndOf="@id/home_pannel_second_title_tv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_vp"/>
 
         <TextView
             android:id="@+id/home_pannel_second_third_tv"
@@ -148,7 +169,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_vp"/>
 
         <TextView
             android:id="@+id/home_pannel_second_second_tv"
@@ -159,7 +180,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             app:layout_constraintEnd_toStartOf="@id/home_pannel_second_third_tv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_vp"/>
 
         <TextView
             android:id="@+id/home_pannel_second_first_tv"
@@ -171,7 +192,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
             app:layout_constraintEnd_toStartOf="@id/home_pannel_second_second_tv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_vp"/>
 
         <ImageView
             android:id="@+id/home_pannel_second_album_1_iv"
@@ -278,12 +299,23 @@
             app:layout_constraintStart_toStartOf="@id/home_pannel_second_title_3_iv"
             />
 
-        <ImageView
-            android:id="@+id/home_pannel_second_to_thrid_iv"
-            android:layout_width="fill_parent"
+
+        <!--        <ImageView-->
+<!--            android:id="@+id/home_pannel_second_to_thrid_iv"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:src="@drawable/img_home_viewpager_exp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/home_pannel_second_singer_1_iv" />-->
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_banner_vp"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:src="@drawable/img_home_viewpager_exp"
             android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/home_pannel_second_singer_1_iv" />
 
@@ -298,7 +330,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginStart="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_second_to_thrid_iv"/>
+            app:layout_constraintTop_toBottomOf="@id/home_banner_vp"/>
 
         <ImageView
             android:id="@+id/home_pannel_third_album_1_iv"
