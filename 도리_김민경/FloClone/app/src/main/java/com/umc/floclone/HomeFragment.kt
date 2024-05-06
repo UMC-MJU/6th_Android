@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.umc.floclone.databinding.FragmentHomeBinding
 import me.relex.circleindicator.CircleIndicator3
+import java.net.NoRouteToHostException
 import java.util.Timer
 import kotlin.concurrent.scheduleAtFixedRate
 
@@ -46,28 +47,34 @@ class HomeFragment(homePannelCl: Int) : Fragment() {
         binding.homeBannerVp.adapter = bannerAdapter
         binding.homeBannerVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
-//        val homeAdapter = HomeViewpagerAdapter(this)
-//        binding.homePannelVp.adapter = homeAdapter
 
-//        val homeViewpagerAdapter = HomeViewpagerAdapter(this)
-//        homeViewpagerAdapter.addFragment(HomePannelFragment(R.layout.fragment_home_pannel))
-//        // Indicator에 ViewPager 설정
-//        binding.homePannelCi.setViewPager(binding.homePannelVp)
+        val homeAdapter = HomeViewpagerAdapter(this)
+        homeAdapter.addFragment(HomePannelFragment(R.drawable.img_first_album_default))
+        homeAdapter.addFragment(HomePannelFragment(R.drawable.img_first_album_default))
+        homeAdapter.addFragment(HomePannelFragment(R.drawable.img_first_album_default))
+
+        binding.homePannelVp.adapter = homeAdapter
+        binding.homePannelVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+
+        // Indicator에 ViewPager 설정
+        binding.homePannelCi.setViewPager(binding.homePannelVp)
+
+        startAutoSlide(homeAdapter)
 
         return binding.root
     }
 
-//    private fun startAutoSlide(adapter: BannerViewpagerAdapter) {
-//        // 3초마다 슬라이드 변경
-//        timer.scheduleAtFixedRate(3000, 3000) {
-//            handler.post {
-//                val nextItem = binding.homePannelVp.currentItem + 1
-//                if (nextItem < adapter.itemCount) {
-//                    binding.homePannelVp.currentItem = nextItem
-//                } else {
-//                    binding.homePannelVp.currentItem = 0    // 마지막 페이지 -> 첫 페이지
-//                }
-//            }
-//        }
-//    }
+    private fun startAutoSlide(adapter: HomeViewpagerAdapter) {
+        // 3초마다 슬라이드 변경
+        timer.scheduleAtFixedRate(3000, 3000) {
+            handler.post {
+                val nextItem = binding.homePannelVp.currentItem + 1
+                if (nextItem < adapter.itemCount) {
+                    binding.homePannelVp.currentItem = nextItem
+                } else {
+                    binding.homePannelVp.currentItem = 0    // 마지막 페이지 -> 첫 페이지
+                }
+            }
+        }
+    }
 }

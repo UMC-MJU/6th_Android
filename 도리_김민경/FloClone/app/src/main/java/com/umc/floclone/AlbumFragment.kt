@@ -41,7 +41,7 @@ class AlbumFragment : Fragment() {
 //
 //        binding.musicListTitle3Tv.setOnClickListener {
 //            Toast.makeText(activity, "제목3", Toast.LENGTH_SHORT).show()
-//        }
+//           }
 //
 //        binding.musicListTitle4Tv.setOnClickListener {
 //            Toast.makeText(activity, "제목4", Toast.LENGTH_SHORT).show()
