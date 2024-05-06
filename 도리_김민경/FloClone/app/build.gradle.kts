@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+//    id("com.android.application") version "8.3.1"
+//    id("com.android.library") version "8.3.1"
+//    id("org.jetbrains.kotlin.android") version "1.9.23"
+
 }
 
 android {
@@ -55,4 +59,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }
