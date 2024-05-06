@@ -43,7 +43,8 @@ class AlbumFragment : Fragment() {
 
 
         binding.albumBackIv.setOnClickListener {
-            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
         }
 
         return binding.root

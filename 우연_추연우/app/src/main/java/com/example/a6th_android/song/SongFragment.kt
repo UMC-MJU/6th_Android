@@ -1,19 +1,20 @@
 package com.example.a6th_android.song
 
+import AlbumFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
+import com.example.a6th_android.MainActivity
+import com.example.a6th_android.R
 import com.example.a6th_android.databinding.FragmentSongBinding
 
 class SongFragment : Fragment() {
 
     lateinit var binding: FragmentSongBinding
-
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,16 +33,31 @@ class SongFragment : Fragment() {
         }
 
         binding.songLalacLayout.setOnClickListener {
-            setFragmentResult (
+            setFragmentResult(
                 "TitleInfo",
                 bundleOf("title" to binding.songMusicTitle01Tv.text.toString())
-
             )
-            setFragmentResult (
+            setFragmentResult(
                 "SingerInfo",
                 bundleOf("singer" to binding.songSingerName01Tv.text.toString())
             )
-            Toast.makeText(this.context, "pass", Toast.LENGTH_SHORT).show()
+
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
+        }
+
+        binding.songFluLayout.setOnClickListener {
+            setFragmentResult(
+                "TitleInfo",
+                bundleOf("title" to binding.songMusicTitle02Tv.text.toString())
+            )
+            setFragmentResult(
+                "SingerInfo",
+                bundleOf("singer" to binding.songSingerName02Tv.text.toString())
+            )
+
+            (context as MainActivity).supportFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
         }
 
         return binding.root

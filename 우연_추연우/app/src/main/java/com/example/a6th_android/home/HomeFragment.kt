@@ -20,6 +20,7 @@ import com.example.a6th_android.pannel.PannelVPAdapter
 class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
