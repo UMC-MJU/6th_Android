@@ -12,23 +12,34 @@ import com.example.myapplication.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     lateinit var activityResultLauncher:ActivityResultLauncher<Intent>
     val binding by lazy{
-        ActivityMainBinding.inflate(layoutInflater)}
+        ActivityMainBinding.inflate(layoutInflater)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.Theme_MyApplication)
+
+        val song = Song(
+            binding.miniPlayerTitleTv.text.toString(),
+            binding.miniPlayerSingerTv.text.toString(),
+            0,60,false
+        )
 
         binding.mainPlayerCl.setOnClickListener {
-            startActivity(Intent(this,SongActivity::class.java))
+            val intent = Intent(this,SongActivity::class.java)
+            intent.putExtra("title", song.title)
+            intent.putExtra("singer",song.singer)
+            intent.putExtra("second", song.second)
+            intent.putExtra("playTime", song.playTime)
+            intent.putExtra("isPlaying",song.isPlaying)
+
+            startActivity(intent)
         }
 
         setContentView(binding.root)
 
         initBottomNavigation()
 
-        val song = Song(
-            binding.miniPlayerTitleTv.text.toString(),
-            binding.miniPlayerSingerTv.text.toString()
-        )
 
         activityResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
@@ -43,13 +54,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.mainPlayerCl.setOnClickListener {
-
-            val intent = Intent(this,SongActivity::class.java)
-            intent.putExtra("title", song.title)
-            intent.putExtra("singer",song.singer,)
-            startActivity(intent)
-        }
 
     }
 

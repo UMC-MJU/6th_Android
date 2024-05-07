@@ -31,7 +31,6 @@ class HomeFragment : Fragment() {
             bundle.putString("title", binding.homePannelTodayMusicTitle1Tv.text.toString())
             bundle.putString("singer", binding.homePannelTodayMusicSinger1Tv.text.toString())
 
-
             val albumFragment = AlbumFragment()
             albumFragment.arguments = bundle
 
