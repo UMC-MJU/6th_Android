@@ -174,7 +174,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00"
-        android:textColor="@color/select_color"
         app:layout_constraintStart_toStartOf="@+id/song_progress_sb"
         app:layout_constraintBottom_toTopOf="@+id/song_progress_sb" />
 
@@ -233,6 +232,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginEnd="30dp"
+        android:textColor="@color/gray_color"
         android:src="@drawable/nugu_btn_repeat_inactive"
         app:layout_constraintBottom_toBottomOf="@+id/song_player_layout"
         app:layout_constraintEnd_toStartOf="@+id/song_player_layout"

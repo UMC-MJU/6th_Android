@@ -22,15 +22,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/home_pannel_background_iv"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_pannel_background_viewPager"
             android:layout_width="match_parent"
             android:layout_height="430dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_first_album_default"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/home_pannel_indicator"
+            app:ci_drawable="@drawable/black_radius"
+            app:ci_width="5dp"
+            app:ci_height="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_viewPager"/>
 
         <ImageView
             android:id="@+id/home_pannel_btn_mike_iv"
@@ -98,7 +107,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginBottom="30dp"
             android:src="@drawable/img_album_exp"
-            app:layout_constraintBottom_toBottomOf="@id/home_pannel_background_iv"
+            app:layout_constraintBottom_toBottomOf="@id/home_pannel_background_viewPager"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -121,9 +130,9 @@
             android:text="bear"
             android:textColor="@color/white"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/home_pannel_album_img_iv"
-            app:layout_constraintStart_toEndOf="@id/home_pannel_album_img_iv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_album_title_tv" />
+            app:layout_constraintBottom_toBottomOf="@id/home_pannel_background_viewPager"
+            app:layout_constraintStart_toEndOf="@id/home_pannel_background_viewPager"
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_viewPager" />
 
         <TextView
             android:id="@+id/home_pannel_description_tv"
@@ -135,8 +144,8 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/home_pannel_background_iv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_background_iv" />
+            app:layout_constraintStart_toStartOf="@id/home_pannel_indicator"
+            app:layout_constraintTop_toBottomOf="@id/home_pannel_indicator" />
 
         <ImageView
             android:id="@+id/home_pannel_arrowLeft_iv"
@@ -174,7 +183,7 @@
             android:layout_marginEnd="20dp"
             android:text="해외"
             android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="@id/home_pannel_background_iv"
+            app:layout_constraintEnd_toEndOf="@id/home_pannel_background_viewPager"
             app:layout_constraintTop_toTopOf="@id/home_pannel_description_tv" />
 
         <HorizontalScrollView
@@ -341,19 +350,17 @@
                         app:layout_constraintTop_toBottomOf="@id/home_todaylaunch_album_title_03_tv" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
-
         </HorizontalScrollView>
 
-        <ImageView
-            android:id="@+id/home_pannel_viewpaper_iv"
-            android:layout_width="409dp"
-            android:layout_height="78dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/img_home_viewpager_exp"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_banner_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/home_todaylaunch_music_hs" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/home_todaylaunch_music_hs"/>
 
         <TextView
             android:id="@+id/home_pannel_daily_tv"
@@ -365,8 +372,8 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@id/home_pannel_viewpaper_iv"
-            app:layout_constraintTop_toBottomOf="@id/home_pannel_viewpaper_iv" />
+            app:layout_constraintStart_toStartOf="@id/home_banner_viewPager"
+            app:layout_constraintTop_toBottomOf="@id/home_banner_viewPager" />
 
         <HorizontalScrollView
             android:id="@+id/home_daily_music_hs"
@@ -726,6 +733,29 @@
                 android:layout_height="20dp"
                 android:src="@drawable/ic_main_twitter"
                 android:layout_marginStart="50dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="50dp"
+            app:layout_constraintTop_toBottomOf="@id/home_SNS_layout">
+
+            <TextView
+                android:id="@+id/home_ceo_info_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(주)드림어스컴퍼니 사업자 정보" />
+
+            <ImageView
+                android:id="@+id/home_ceo_info_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/btn_main_arrow_more" />
 
         </LinearLayout>
 
