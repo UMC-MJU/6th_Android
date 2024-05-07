@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/home_Fragment"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_bottom_home_no_select"
+        app:showAsAction="always"
+        android:enabled="true"
         android:title="@string/title_home" />
 
     <item
         android:id="@+id/lookaround_Fragment"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_bottom_look_no_select"
+        app:showAsAction="always"
         android:title="@string/title_lookaround" />
 
     <item
         android:id="@+id/search_Fragment"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_bottom_search_no_select"
+        app:showAsAction="always"
         android:title="@string/title_search" />
 
     <item
         android:id="@+id/storage_Fragment"
-        android:icon="@drawable/ic_notifications_black_24dp"
+        android:icon="@drawable/ic_bottom_locker_no_select"
+        app:showAsAction="always"
         android:title="@string/title_storage" />
 
 </menu>
