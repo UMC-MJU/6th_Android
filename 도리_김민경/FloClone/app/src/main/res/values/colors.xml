@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple">#FF673AB7</color>
     <color name="grey">#8A8A8A</color>
+    <color name="song_player_bg">#a8a8a8</color>
+    <color name="song_player">#3f3fff</color>
+    <color name="transparent">#00ff0000</color>
 </resources>

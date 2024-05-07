@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.umc.floclone.databinding.FragmentHomeBinding
 import com.umc.floclone.databinding.FragmentHomePannelBinding
 
-class HomePannelFragment(val bgRes : Int) : Fragment() {
+class HomePannelFragment(val imgRes : Int) : Fragment() {
     lateinit var binding: FragmentHomePannelBinding
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -16,8 +16,8 @@ class HomePannelFragment(val bgRes : Int) : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomePannelBinding.inflate(inflater, container, false)
-        val homeViewpagerAdapter = HomeViewpagerAdapter(this)
-        binding.homePannelCl.setBackgroundResource(bgRes)
+
+        binding.homePannelCl.setBackgroundResource(imgRes)
         return binding.root
     }
 }

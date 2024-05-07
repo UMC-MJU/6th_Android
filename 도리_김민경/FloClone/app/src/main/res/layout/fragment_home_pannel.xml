@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <ImageView
         android:id="@+id/home_pannel_background_iv"
         android:layout_width="match_parent"
@@ -97,7 +98,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginBottom="80dp"
         android:src="@drawable/img_album_exp"
-        app:layout_constraintBottom_toBottomOf="@id/home_pannel_background_iv"
+        app:layout_constraintBottom_toBottomOf="@id/home_pannel_album_img1_iv"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -148,4 +149,5 @@
         app:layout_constraintTop_toBottomOf="@id/home_pannel_title_tv"
         app:layout_constraintVertical_bias="0.995">
     </TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
