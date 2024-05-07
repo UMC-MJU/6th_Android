@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">6th_android</string>
+    <string name="title_home">Home</string>
+    <string name="title_lookaround">Lookcaround</string>
+    <string name="title_search">Search</string>
+    <string name="title_storage">Storage</string>
+</resources>
