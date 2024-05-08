@@ -751,8 +751,6 @@
                     app:layout_constraintTop_toBottomOf="@id/home_pannel_viewpager2_iv" />
             </LinearLayout>
 
-
-
             <me.relex.circleindicator.CircleIndicator3
                 android:id="@+id/home_pannel_ci"
                 android:layout_width="match_parent"

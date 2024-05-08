@@ -1,6 +1,7 @@
 package com.umc.floclone
 
 import android.content.Intent
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -8,12 +9,17 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.gson.Gson
 import com.umc.floclone.databinding.ActivitySongBinding
 
 class SongActivity : AppCompatActivity() {
     lateinit var binding: ActivitySongBinding
     lateinit var song: Song
     lateinit var timer: Timer
+    // 음악 재생을 위한 mediaPlayer
+    private var mediaPlayer: MediaPlayer? = null
+    // GSON 선언
+    val gson: Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,21 +29,8 @@ class SongActivity : AppCompatActivity() {
         initSong()
         setPlayer(song)
 
-//        var title : String? = null
-//        var singer : String? = null
-
-//        if (intent.hasExtra("title") && intent.hasExtra("singer")) {
-//            title = intent.getStringExtra("title")
-//            singer = intent.getStringExtra("singer")
-//            binding.playerMusicTitleTv.text = title
-//            binding.playerMusicSingerTv.text = singer
-//        }
-
         // 아래 화살표 버튼 누르면 액티비티 종료
         binding.playerDownIb.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//            intent.putExtra("message", title + " _ " + singer)
-//            setResult(RESULT_OK, intent)
             finish()
         }
 
@@ -66,16 +59,12 @@ class SongActivity : AppCompatActivity() {
                 intent.getStringExtra("title")!!,
                 intent.getStringExtra("singer")!!,
                 intent.getIntExtra("second", 0),
-                intent.getIntExtra("playTime", 60000),
-                intent.getBooleanExtra("isPlaying", false)
+                intent.getIntExtra("playTime", 0),
+                intent.getBooleanExtra("isPlaying", false),
+                intent.getStringExtra("music")!!
             )
         }
         startTimer()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        timer.interrupt()
     }
 
     private fun setPlayer(song: Song) {
@@ -85,8 +74,10 @@ class SongActivity : AppCompatActivity() {
             String.format("%02d:%02d", song.second / 60, song.second % 60)
         binding.playerMusicEndTimeTv.text =
             String.format("%02d:%02d", song.playTime / 60, song.playTime % 60)
-        binding.songProgressSb.progress =
-            if (song.playTime == 0) 0 else (song.second * 1000 / song.playTime)
+        binding.songProgressSb.progress = if (song.playTime == 0) 0 else (song.second * 1000 / song.playTime)
+
+        val music = resources.getIdentifier(song.music, "raw", this.packageName)
+        mediaPlayer = MediaPlayer.create(this, music)
 
         setPlayerStatus(song.isPlaying)
     }
@@ -98,9 +89,14 @@ class SongActivity : AppCompatActivity() {
         if (isPlaying) {    // 재생중일 경우
             binding.playerPlayIv.visibility = View.GONE
             binding.playerPauseIv.visibility = View.VISIBLE
+            mediaPlayer?.start()
         } else {    // 일시정지한 경우
             binding.playerPlayIv.visibility = View.VISIBLE
             binding.playerPauseIv.visibility = View.GONE
+            // mediaPlayer은 재생 중이 아닐 때 pause를 하면 오류가 발생할 수 있음
+            if (mediaPlayer?.isPlaying == true) {
+                mediaPlayer?.pause()
+            }
         }
     }
 
@@ -142,10 +138,10 @@ class SongActivity : AppCompatActivity() {
                         if (millis % 1000 == 0f) {
                             runOnUiThread {
                                 binding.playerMusicStartTimeTv.text =
-                                    String.format("%02d:%02d", song.second / 60, song.second % 60)
+                                    String.format("%02d:%02d", second / 60, second % 60)
                             }
+                            second++
                         }
-                        second++
                     }
                 }
 
@@ -155,10 +151,32 @@ class SongActivity : AppCompatActivity() {
         }
     }
 
+    // 사용자가 포커스를 잃었을 때 음악이 중지됨
+    override fun onPause() {
+        super.onPause()
+        setPlayerStatus(false)
+        song.second = ((binding.songProgressSb.progress * song.playTime) / 100) / 1000  // 밀리초로 계산되고 있어 1000으로 나누어줘야함
+
+        // 내부 저장소에 데이터 저장, 앱 종료 후 재실행시 저장된 데이터 불러옴
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()   // 에디터
+
+        // 일일이 putString을 하지 않고 JSON으로 사용 가능
+//        editor.putString("title", song.title)
+//        editor.putString("title", song.singer)
+
+        // song 객체를 JSON 포맷으로 변환
+        val songJson = gson.toJson(song)
+        editor.putString("songData", songJson)
+
+        // 실제 저장공간에 저장
+        editor.apply()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        timer.interrupt()
+        mediaPlayer?.release()  // 미디어플레이어가 갖고 있던 리소스 해제
+        mediaPlayer = null     // 미디어플레이어 해제
+    }
 }
-//    override fun onBackPressed() {
-//        val intent = Intent(this, MainActivity::class.java)
-//        intent.putExtra("message", "뒤로가기 버튼 클릭")
-//        setResult(RESULT_OK, intent)
-//        finish()
-//    }

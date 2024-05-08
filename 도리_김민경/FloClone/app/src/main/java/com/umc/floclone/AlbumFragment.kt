@@ -19,10 +19,6 @@ class AlbumFragment : Fragment() {
     ): View? {
         binding = FragmentAlbumBinding.inflate(layoutInflater)
 
-//        binding.musicListTitle1Tv.text = arguments?.getString("title")
-//        binding.musicListSinger1Tv.text = arguments?.getString("singer")
-//        binding.albumSingerTv.text = arguments?.getString("singer")
-//
         binding.albumBackIv.setOnClickListener {
             (context as MainActivity)
                 .supportFragmentManager
@@ -30,27 +26,6 @@ class AlbumFragment : Fragment() {
                 .replace(R.id.main_frm, HomeFragment(R.id.home_pannel_cl))
                 .commitAllowingStateLoss()
         }
-//
-//        binding.musicListTitle1Tv.setOnClickListener {
-//            Toast.makeText(activity, "제목1", Toast.LENGTH_SHORT).show()
-//        }
-//
-//        binding.musicListTitle2Tv.setOnClickListener {
-//            Toast.makeText(activity, "제목2", Toast.LENGTH_SHORT).show()
-//        }
-//
-//        binding.musicListTitle3Tv.setOnClickListener {
-//            Toast.makeText(activity, "제목3", Toast.LENGTH_SHORT).show()
-//           }
-//
-//        binding.musicListTitle4Tv.setOnClickListener {
-//            Toast.makeText(activity, "제목4", Toast.LENGTH_SHORT).show()
-//        }
-//
-//        binding.musicListTitle5Tv.setOnClickListener {
-//            Toast.makeText(activity, "제목5", Toast.LENGTH_SHORT).show()
-//        }
-//
 
         val albumAdapter = AlbumViewpagerAdapter(this)
         binding.albumContentVp.adapter = albumAdapter
