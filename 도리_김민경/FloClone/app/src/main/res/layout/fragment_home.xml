@@ -756,6 +756,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 app:layout_constraintBottom_toTopOf="@id/home_pannel_today_music_layout"
+                app:ci_animator="@animator/scale_with_alpha"
+
                 app:ci_drawable="@drawable/purple_radius">
             </me.relex.circleindicator.CircleIndicator3>
 
