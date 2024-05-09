@@ -7,11 +7,14 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.google.gson.Gson
 import com.umc.floclone.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
+    private var song: Song = Song()
+    private var gson: Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +23,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initBottomNavigation()
-
-        val song = Song(
-            binding.miniPlayerTitleTv.text.toString(),
-            binding.miniPlayerSingerTv.text.toString()
-        )
 
         activityResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
@@ -46,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("second", song.second)
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying", song.isPlaying)
+            intent.putExtra("music", song.music)
             activityResultLauncher.launch(intent)
         }
     }
@@ -96,5 +95,37 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
+    }
+
+    private fun setMiniPlayer(song: Song) {
+        binding.miniPlayerTitleTv.text = song.title
+        binding.miniPlayerSingerTv.text = song.singer
+        binding.mainProgressSb.progress = (song.second * 100000) / song.playTime
+    }
+
+    // Song Activity의 데이터 반영은 onStart에서 해주는 것이 좋음
+    // onResume에서 해줘도 되지만 onStart가 사용자에게 액티비티 보이기 직전에 실행되므로 더 안정적
+    override fun onStart() {
+        super.onStart()
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
+        val songJson = sharedPreferences.getString("songData", null)
+
+        // 가져온 값을 song 객체에 담아줌
+        // songJson에 담긴 정보가 없을 땐 직접 초기화
+        song = if (songJson == null) {
+            Song(
+                "라일락",
+                "아이유(IU)",
+                0,
+                60,
+                false,
+                "winner_winner_funky_chicken_dinner"
+            )
+        } else {
+            gson.fromJson(songJson, Song::class.java)
+        }
+
+        // 미니플레이어에 반영
+        setMiniPlayer(song)
     }
 }

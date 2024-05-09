@@ -46,6 +46,7 @@ android {
 
 dependencies {
 
+    implementation("com.google.code.gson:gson:2.10.1")
     implementation("me.relex:circleindicator:2.1.6")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
