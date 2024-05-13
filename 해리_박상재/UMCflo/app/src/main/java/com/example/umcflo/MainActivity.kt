@@ -10,10 +10,14 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.umcflo.databinding.ActivityMainBinding
+import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
     lateinit var activityResultLauncher:ActivityResultLauncher<Intent>
     lateinit var  binding: ActivityMainBinding
+    private  var song:Song = Song()
+    private  var gson: Gson = Gson()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,12 +26,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initBottomNavigation()
-
-        val song = Song(
-            binding.miniPlayerTitleTv.text.toString(),
-            binding.miniPlayerSingerTv.text.toString(),
-            0,60,false
-        )
 
         activityResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
@@ -49,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("second", song.second)
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying", song.isPlaying)
+            intent.putExtra("music", song.music)
             activityResultLauncher.launch(intent)
         }
 
@@ -92,4 +91,27 @@ class MainActivity : AppCompatActivity() {
             false
         }
     }
+
+    private fun setMiniPlayer(song: Song){
+        binding.mainMiniplayerTitleTv.text = song.title
+        binding.mainMiniplayerSingerTv.text = song.singer
+        binding.mainMiniplayerProgressSb.progress = (song.second*100000)/song.playTime
+    }
+
+    //activity 전환이 될땐 onCreate가아닌 start부터 시작
+    override fun onStart() {
+        super.onStart()
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE) //song은 sharedPreferences의 이름
+        val songJson = sharedPreferences.getString("songData", null) //songData는 sharedPreferences안에 데이터
+
+        song = if(songJson == null){ //데이터 저장값이 없을때 디폴트값
+            Song("라일락", "아이유(IU)", 0, 60, false, "music_lilac")
+        }else{ //songJson을 자바객체로 변환
+            gson.fromJson(songJson, Song::class.java)
+        }
+        setMiniPlayer(song)
+
+    }
+
+
 }

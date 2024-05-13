@@ -3578,9 +3578,12 @@ id lookFragment
 id lower_ib
 id lyrics_01_iv
 id m3_side_sheet
+id mainMiniplayerSingerTv
+id mainMiniplayerTitleTv
 id main_bnv
 id main_frm
 id main_miniplayer_btn
+id main_miniplayer_progress_sb
 id main_pause_btn
 id main_player_cl
 id marquee
@@ -3611,8 +3614,6 @@ id matrix
 id message
 id middle
 id mini
-id mini_player_singer_tv
-id mini_player_title_tv
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -4139,6 +4140,7 @@ menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw music_lilac
 string _2012_07_03
 string abc_action_bar_home_description
 string abc_action_bar_up_description

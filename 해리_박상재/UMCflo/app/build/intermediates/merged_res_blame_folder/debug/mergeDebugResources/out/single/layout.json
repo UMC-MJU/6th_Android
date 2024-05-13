@@ -16,10 +16,6 @@
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/activity_song.xml",
-        "source": "com.example.umcflo.app-main-34:/layout/activity_song.xml"
-    },
-    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\activity_song.xml",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_song.xml"
     },
@@ -46,6 +42,10 @@
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_song.xml",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_song.xml"
+    },
+    {
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_album.xml",
