@@ -23,7 +23,23 @@
         android:paddingVertical="5dp"
         android:background="#F9F9F9">
 
+        <SeekBar
+            android:id="@+id/main_progress_sb"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@null"
+            android:progress="0"
+            android:progressBackgroundTint="@color/gray_color"
+            android:progressTint="@color/select_color"
+            android:thumb="@color/transparent"
+            android:max="100000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/main_miniplayer_ll"/>
+
+
         <LinearLayout
+            android:id="@+id/main_miniplayer_ll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
