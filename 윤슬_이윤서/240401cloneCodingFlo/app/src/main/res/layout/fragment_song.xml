@@ -152,7 +152,21 @@
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
                         tools:ignore="MissingConstraints" />
-
+                    <TextView
+                        android:id="@+id/song_list_title_01_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/textview_background_select_color_radius"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="TITLE"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        app:layout_constraintBottom_toBottomOf="@id/album_list_title_tv"
+                        app:layout_constraintStart_toEndOf="@id/album_list_number_tv"
+                        app:layout_constraintEnd_toStartOf="@id/album_list_title_tv"
+                        app:layout_constraintTop_toTopOf="@id/album_list_title_tv" />
                     <TextView
                         android:id="@+id/album_list_title_tv"
                         android:layout_width="wrap_content"
@@ -163,7 +177,7 @@
                         android:textSize="12dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@id/album_list_number_tv"
-                        app:layout_constraintStart_toEndOf="@id/album_list_number_tv"
+                        app:layout_constraintStart_toEndOf="@id/song_list_title_01_tv"
                         app:layout_constraintTop_toTopOf="@id/album_list_number_tv" />
 
                     <TextView
@@ -173,7 +187,7 @@
                         android:layout_marginTop="5dp"
                         android:text="가수"
                         android:textSize="10dp"
-                        app:layout_constraintStart_toStartOf="@id/album_list_title_tv"
+                        app:layout_constraintStart_toStartOf="@id/song_list_title_01_tv"
                         app:layout_constraintTop_toBottomOf="@id/album_list_number_tv" />
 
                     <ImageView
