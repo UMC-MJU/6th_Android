@@ -20,6 +20,11 @@ class AlbumFragment : Fragment() {
 
         binding.albumBeenzinoTv.text = arguments?.getString("title")
         binding.albumMusicSingerTv.text = arguments?.getString("singer")
+        val imageResourceId = arguments?.getInt("album")
+        if (imageResourceId != null) {
+            binding.albumBeenzinoIv.setImageResource(imageResourceId)
+        }
+
 
 
         binding.albumBackIv.setOnClickListener {

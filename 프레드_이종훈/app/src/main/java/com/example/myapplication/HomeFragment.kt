@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -26,23 +27,32 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         binding.homePannelAlbumBeenzinoIv.setOnClickListener {
+            val imageResourceId : Int = R.drawable.aquaman
+
 
             val bundle = Bundle()
             bundle.putString("title", binding.homePannelTodayMusicTitle1Tv.text.toString())
             bundle.putString("singer", binding.homePannelTodayMusicSinger1Tv.text.toString())
-
+            bundle.putInt("album",imageResourceId)
             val albumFragment = AlbumFragment()
             albumFragment.arguments = bundle
 
            (context as MainActivity).supportFragmentManager.beginTransaction().replace(
                 R.id.main_frm, albumFragment).commitAllowingStateLoss()
 
+
+
+
+
+
         }
         binding.homePannelAlbumBigbang.setOnClickListener {
+            val imageResourceId:Int = R.drawable.bangbangbang
 
             val bundle = Bundle()
             bundle.putString("title", binding.homePannelTodayMusicTitle2Tv.text.toString())
             bundle.putString("singer", binding.homePannelTodayMusicSinger2Tv.text.toString())
+            bundle.putInt("album",imageResourceId)
 
 
             val albumFragment = AlbumFragment()
@@ -54,10 +64,11 @@ class HomeFragment : Fragment() {
         }
 
         binding.homePannelAlbumChangmo.setOnClickListener {
-
+            val imageResourceId:Int = R.drawable.beautiful
             val bundle = Bundle()
             bundle.putString("title", binding.homePannelTodayMusicTitle3Tv.text.toString())
             bundle.putString("singer", binding.homePannelTodayMusicSinger3Tv.text.toString())
+            bundle.putInt("album",imageResourceId)
 
 
             val albumFragment = AlbumFragment()

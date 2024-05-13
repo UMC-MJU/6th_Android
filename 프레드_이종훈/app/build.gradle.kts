@@ -54,5 +54,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 //인디케이터 애니메이션 오픈소스
     implementation("me.relex:circleindicator:2.1.6")
+    //gson 파일
+    implementation("com.google.code.gson:gson:2.10.1")
 
 }

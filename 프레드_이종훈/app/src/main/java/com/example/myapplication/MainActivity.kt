@@ -8,12 +8,15 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
     lateinit var activityResultLauncher:ActivityResultLauncher<Intent>
     val binding by lazy{
         ActivityMainBinding.inflate(layoutInflater)
     }
+    private  var song: Song = Song()
+    private var gson : Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val song = Song(
             binding.miniPlayerTitleTv.text.toString(),
             binding.miniPlayerSingerTv.text.toString(),
-            0,60,false
+            0,60,false,"music_lilac"
         )
 
         binding.mainPlayerCl.setOnClickListener {
@@ -32,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("second", song.second)
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying",song.isPlaying)
+            intent.putExtra("music",song.music)
 
             startActivity(intent)
         }
@@ -94,5 +98,33 @@ class MainActivity : AppCompatActivity() {
             }
             false
         }
+    }
+
+    private fun setMiniPlayer(song: Song){
+        binding.miniPlayerTitleTv.text = song.title
+        binding.miniPlayerSingerTv.text = song.singer
+        //seekbar의 max가 10만 이므로.
+        binding.mainMiniplayerProgressSb.progress = (song.second*100000)/song.playTime
+    }
+    //songactivity에서의 song data를 mainactivity에서의 miniplayer 반영
+    //액티비티 전환될때 onstart부터 시작되기 때문이다.
+    override fun onStart() {
+        super.onStart()
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
+        val songJson = sharedPreferences.getString("songData", null)
+
+        //가져온 값을 song 객체에 담기
+        song = if (songJson == null){
+            Song("아쿠아맨","빈지노(BEENZINO)",0,60,false,"music_lilac")
+        } else{
+            //데이터가 존재할 때는 저장된 값을 가져오면 됨.
+            gson.fromJson(songJson, Song::class.java)
+        }
+
+        setMiniPlayer(song)
+
+
+
+
     }
 }
