@@ -21,9 +21,7 @@ class SongFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         binding = FragmentSongBinding.inflate(inflater, container, false)
-
 
         binding.songMixoffTg.setOnClickListener {
             setToggleStatus(false)
@@ -33,33 +31,18 @@ class SongFragment : Fragment() {
         }
 
         binding.songLalacLayout.setOnClickListener {
-            setFragmentResult(
-                "TitleInfo",
-                bundleOf("title" to binding.songMusicTitle01Tv.text.toString())
-            )
-            setFragmentResult(
-                "SingerInfo",
-                bundleOf("singer" to binding.songSingerName01Tv.text.toString())
-            )
-
+            setFragmentResult("Title", bundleOf("title" to binding.songMusicTitle01Tv.text.toString()))
+            setFragmentResult("Singer", bundleOf("singer" to binding.songSingerName01Tv.text.toString()))
             (context as MainActivity).supportFragmentManager.beginTransaction()
                 .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
         }
 
         binding.songFluLayout.setOnClickListener {
-            setFragmentResult(
-                "TitleInfo",
-                bundleOf("title" to binding.songMusicTitle02Tv.text.toString())
-            )
-            setFragmentResult(
-                "SingerInfo",
-                bundleOf("singer" to binding.songSingerName02Tv.text.toString())
-            )
-
+            setFragmentResult("Title", bundleOf("title" to binding.songMusicTitle02Tv.text.toString()))
+            setFragmentResult("Singer", bundleOf("singer" to binding.songSingerName02Tv.text.toString()))
             (context as MainActivity).supportFragmentManager.beginTransaction()
                 .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
         }
-
         return binding.root
     }
 

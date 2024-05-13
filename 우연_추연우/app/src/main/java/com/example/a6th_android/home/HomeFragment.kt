@@ -9,11 +9,10 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import androidx.viewpager2.widget.ViewPager2
-import com.example.a6th_android.MainActivity
 import com.example.a6th_android.R
-import com.example.a6th_android.databinding.FragmentHomeBinding
 import com.example.a6th_android.banner.BannerFragment
 import com.example.a6th_android.banner.BannerVPAdapter
+import com.example.a6th_android.databinding.FragmentHomeBinding
 import com.example.a6th_android.pannel.PannelFragment
 import com.example.a6th_android.pannel.PannelVPAdapter
 
@@ -29,31 +28,19 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         binding.homeTodaylaunchAlbumImg01Iv.setOnClickListener {
-            setFragmentResult(
-                "TitleInfo",
-                bundleOf("title" to binding.homeTodaylaunchAlbumTitle01Tv.text.toString())
-            )
-            setFragmentResult(
-                "SingerInfo",
-                bundleOf("singer" to binding.homeTodaylaunchAlbumSinger01Tv.text.toString())
-            )
-
-            (context as MainActivity).supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
+            setFragmentResult("Title", bundleOf("title" to binding.homeTodaylaunchAlbumTitle01Tv.text.toString()))
+            setFragmentResult("Singer", bundleOf("singer" to binding.homeTodaylaunchAlbumSinger01Tv.text.toString()))
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, AlbumFragment())
+                .commit()
         }
 
         binding.homeTodaylaunchAlbumImg02Iv.setOnClickListener {
-            setFragmentResult(
-                "TitleInfo",
-                bundleOf("title" to binding.homeTodaylaunchAlbumTitle02Tv.text.toString())
-            )
-            setFragmentResult(
-                "SingerInfo",
-                bundleOf("singer" to binding.homeTodaylaunchAlbumSinger02Tv.text.toString())
-            )
-
-            (context as MainActivity).supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
+            setFragmentResult("Title", bundleOf("title" to binding.homeTodaylaunchAlbumTitle02Tv.text.toString()))
+            setFragmentResult("Singer", bundleOf("singer" to binding.homeTodaylaunchAlbumSinger02Tv.text.toString()))
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.main_frm, AlbumFragment())
+                .commit()
         }
 
         val pannelAdapter = PannelVPAdapter(this)

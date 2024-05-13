@@ -1,25 +1,32 @@
 package com.example.a6th_android.song
 
 import android.graphics.Color
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import com.example.a6th_android.R
 import com.example.a6th_android.Song
 import com.example.a6th_android.databinding.ActivitySongBinding
-import kotlin.system.measureTimeMillis
+import com.google.gson.Gson
 
 
 class SongActivity : AppCompatActivity() {
     lateinit var binding : ActivitySongBinding
     lateinit var song : Song
     lateinit var timer : Timer
+    private var gson : Gson = Gson()
+    private var isRepeat : Boolean = false
+    private var isRandom : Boolean = false
+    private var mediaPlayer : MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySongBinding.inflate(layoutInflater)
+        val actionbar : ActionBar? = supportActionBar
+        actionbar?.hide()
         setContentView(binding.root)
 
         initSong()
@@ -30,10 +37,10 @@ class SongActivity : AppCompatActivity() {
         }
 
         binding.songMiniplayerIv.setOnClickListener {
-            setPlayerStatus(false)
+            setPlayerStatus(true)
         }
         binding.songPauseIv.setOnClickListener {
-            setPlayerStatus(true)
+            setPlayerStatus(false)
         }
 
         binding.songRepeatIv.setOnClickListener {
@@ -46,9 +53,24 @@ class SongActivity : AppCompatActivity() {
 
     }
 
+    override fun onPause() {
+        super.onPause()
+        setPlayerStatus(false)
+        song.second = ((binding.songProgressSb.progress) * song.playTime / 100) / 1000
+
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        val songJson = gson.toJson(song)
+        editor.putString("songData", songJson)
+        editor.apply()
+    }
+
+
     override fun onDestroy() {
         super.onDestroy()
         timer.interrupt()
+        mediaPlayer?.release()
+        mediaPlayer = null
     }
 
     private fun initSong() {
@@ -58,9 +80,8 @@ class SongActivity : AppCompatActivity() {
                 intent.getStringExtra("singer")!!,
                 intent.getIntExtra("second", 0),
                 intent.getIntExtra("playTime", 0),
-                intent.getBooleanExtra("isPlaying", false),
-                intent.getBooleanExtra("isRepeat", false),
-                intent.getBooleanExtra("isRandom", false)
+                intent.getBooleanExtra("isPlaying", true),
+                intent.getStringExtra("music")!!
             )
         }
         startTimer()
@@ -71,7 +92,9 @@ class SongActivity : AppCompatActivity() {
         binding.songSingerNameTv.text = intent.getStringExtra("singer")!!
         binding.songStartTimeTv.text = String.format("%02d:%02d",song.second/60, song.second%60)
         binding.songEndTimeTv.text = String.format("%02d:%02d",song.playTime/60, song.playTime%60)
-        binding.songProgressSb.progress = (song.second *1000/ song.playTime)
+        binding.songProgressSb.progress = (song.second * 1000/ song.playTime)
+        val music = resources.getIdentifier(song.music,"raw", this.packageName)
+        mediaPlayer = MediaPlayer.create(this,music)
 
         setPlayerStatus(song.isPlaying)
     }
@@ -81,6 +104,10 @@ class SongActivity : AppCompatActivity() {
         timer.start()
     }
 
+    private fun resetProcess() {
+        mediaPlayer?.seekTo(0)
+        mediaPlayer?.pause()
+    }
 
     inner class Timer(private val playTime : Int, var isPlaying: Boolean = true)  : Thread(){
         private var second : Int =  0
@@ -91,7 +118,16 @@ class SongActivity : AppCompatActivity() {
             try {
                 while(true) {
                     if(second >= playTime ) {
-                        break
+                        resetProcess()
+                        if (isRepeat) {
+                            // If isRepeat is true, reset the timer
+                            second = 0
+                            mills = 0f
+                            mediaPlayer?.start()
+                        } else {
+                            // If isRepeat is false, break the loop
+                            break
+                        }
                     }
                     if(isPlaying) {
                         sleep(50)
@@ -112,7 +148,6 @@ class SongActivity : AppCompatActivity() {
             } catch (e : InterruptedException){
                 Log.d("Song", "쓰레드가 죽없습니다.${e.message}")
             }
-
         }
     }
 
@@ -121,33 +156,36 @@ class SongActivity : AppCompatActivity() {
         timer.isPlaying = isPlaying
 
         if(isPlaying){
-            binding.songMiniplayerIv.visibility = View.VISIBLE
-            binding.songPauseIv.visibility = View.GONE
-        } else {
             binding.songMiniplayerIv.visibility = View.GONE
             binding.songPauseIv.visibility = View.VISIBLE
+            mediaPlayer?.start()
+        } else {
+            binding.songMiniplayerIv.visibility = View.VISIBLE
+            binding.songPauseIv.visibility = View.GONE
+            if(mediaPlayer?.isPlaying == true) {
+                mediaPlayer?.pause()
+            }
         }
     }
 
     private fun setRepeatStatus() {
-        if(song.isRepeat){
-            song.isRepeat = false
-            binding.songRepeatIv.setColorFilter(R.drawable.btm_color_selector)
+        if(isRepeat == false){
+            isRepeat = true
+            binding.songRepeatIv.setColorFilter(R.color.purple_700)
         } else {
-            song.isRepeat = true
-            binding.songRepeatIv.setColorFilter(R.drawable.btm_color_selector)
+            isRepeat = false
+            binding.songRepeatIv.setColorFilter(Color.GRAY)
         }
+
     }
 
     private fun setRandomStatus() {
-        if(song.isRandom){
-            song.isRandom = false
-            binding.songRandomIv.setColorFilter(Color.GRAY)
-        } else {
-            song.isRandom = true
+        if(isRandom == false){
+            isRandom = true
             binding.songRandomIv.setColorFilter(R.color.purple_700)
+        } else {
+            isRandom = false
+            binding.songRandomIv.setColorFilter(Color.GRAY)
         }
     }
-
-
 }
