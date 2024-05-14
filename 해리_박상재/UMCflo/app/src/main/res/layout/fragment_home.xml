@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
 <!--        <ImageView-->
 <!--            android:id="@+id/home_pannel_background_iv"-->
 <!--            android:layout_width="match_parent"-->
@@ -24,6 +25,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
+
 
         <me.relex.circleindicator.CircleIndicator3
             android:id="@+id/indicator"

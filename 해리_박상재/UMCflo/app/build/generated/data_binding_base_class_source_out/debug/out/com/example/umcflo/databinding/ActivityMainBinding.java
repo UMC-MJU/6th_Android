@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,30 +33,34 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageView mainMiniplayerBtn;
 
   @NonNull
+  public final SeekBar mainMiniplayerProgressSb;
+
+  @NonNull
+  public final TextView mainMiniplayerSingerTv;
+
+  @NonNull
+  public final TextView mainMiniplayerTitleTv;
+
+  @NonNull
   public final ImageView mainPauseBtn;
 
   @NonNull
   public final ConstraintLayout mainPlayerCl;
 
-  @NonNull
-  public final TextView miniPlayerSingerTv;
-
-  @NonNull
-  public final TextView miniPlayerTitleTv;
-
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull BottomNavigationView mainBnv, @NonNull FrameLayout mainFrm,
-      @NonNull ImageView mainMiniplayerBtn, @NonNull ImageView mainPauseBtn,
-      @NonNull ConstraintLayout mainPlayerCl, @NonNull TextView miniPlayerSingerTv,
-      @NonNull TextView miniPlayerTitleTv) {
+      @NonNull ImageView mainMiniplayerBtn, @NonNull SeekBar mainMiniplayerProgressSb,
+      @NonNull TextView mainMiniplayerSingerTv, @NonNull TextView mainMiniplayerTitleTv,
+      @NonNull ImageView mainPauseBtn, @NonNull ConstraintLayout mainPlayerCl) {
     this.rootView = rootView;
     this.mainBnv = mainBnv;
     this.mainFrm = mainFrm;
     this.mainMiniplayerBtn = mainMiniplayerBtn;
+    this.mainMiniplayerProgressSb = mainMiniplayerProgressSb;
+    this.mainMiniplayerSingerTv = mainMiniplayerSingerTv;
+    this.mainMiniplayerTitleTv = mainMiniplayerTitleTv;
     this.mainPauseBtn = mainPauseBtn;
     this.mainPlayerCl = mainPlayerCl;
-    this.miniPlayerSingerTv = miniPlayerSingerTv;
-    this.miniPlayerTitleTv = miniPlayerTitleTv;
   }
 
   @Override
@@ -103,6 +108,24 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.main_miniplayer_progress_sb;
+      SeekBar mainMiniplayerProgressSb = ViewBindings.findChildViewById(rootView, id);
+      if (mainMiniplayerProgressSb == null) {
+        break missingId;
+      }
+
+      id = R.id.mainMiniplayerSingerTv;
+      TextView mainMiniplayerSingerTv = ViewBindings.findChildViewById(rootView, id);
+      if (mainMiniplayerSingerTv == null) {
+        break missingId;
+      }
+
+      id = R.id.mainMiniplayerTitleTv;
+      TextView mainMiniplayerTitleTv = ViewBindings.findChildViewById(rootView, id);
+      if (mainMiniplayerTitleTv == null) {
+        break missingId;
+      }
+
       id = R.id.main_pause_btn;
       ImageView mainPauseBtn = ViewBindings.findChildViewById(rootView, id);
       if (mainPauseBtn == null) {
@@ -115,20 +138,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.mini_player_singer_tv;
-      TextView miniPlayerSingerTv = ViewBindings.findChildViewById(rootView, id);
-      if (miniPlayerSingerTv == null) {
-        break missingId;
-      }
-
-      id = R.id.mini_player_title_tv;
-      TextView miniPlayerTitleTv = ViewBindings.findChildViewById(rootView, id);
-      if (miniPlayerTitleTv == null) {
-        break missingId;
-      }
-
       return new ActivityMainBinding((ConstraintLayout) rootView, mainBnv, mainFrm,
-          mainMiniplayerBtn, mainPauseBtn, mainPlayerCl, miniPlayerSingerTv, miniPlayerTitleTv);
+          mainMiniplayerBtn, mainMiniplayerProgressSb, mainMiniplayerSingerTv,
+          mainMiniplayerTitleTv, mainPauseBtn, mainPlayerCl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

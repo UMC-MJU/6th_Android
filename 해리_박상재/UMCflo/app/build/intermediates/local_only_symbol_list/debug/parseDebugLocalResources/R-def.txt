@@ -232,13 +232,14 @@ id locker_title_tv
 id lookFragment
 id lower_ib
 id lyrics_01_iv
+id mainMiniplayerSingerTv
+id mainMiniplayerTitleTv
 id main_bnv
 id main_frm
 id main_miniplayer_btn
+id main_miniplayer_progress_sb
 id main_pause_btn
 id main_player_cl
-id mini_player_singer_tv
-id mini_player_title_tv
 id music_title_tv
 id pannel_image_iv
 id player_like_iv
@@ -340,6 +341,7 @@ layout fragment_video
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw music_lilac
 string _2012_07_03
 string app_name
 string beenzino
