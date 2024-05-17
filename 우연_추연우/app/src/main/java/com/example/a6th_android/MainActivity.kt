@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
+import com.example.a6th_android.album.Album
 import com.example.a6th_android.databinding.ActivityMainBinding
 import com.example.a6th_android.home.HomeFragment
 import com.example.a6th_android.song.SongActivity
@@ -84,6 +85,12 @@ class MainActivity : AppCompatActivity() {
         binding.mainMiniplayerTitleTv.text = song.title
         binding.mainMiniplayerSingerTv.text = song.singer
         binding.mainMiniplayerProgressSb.progress = (song.second * 100000) / song.playTime
+    }
+
+    fun setMiniPlayer(album : Album) {
+        binding.mainMiniplayerTitleTv.text = album.title
+        binding.mainMiniplayerSingerTv.text = album.singer
+        binding.mainMiniplayerProgressSb.progress = 0
     }
 
     override fun onStart() {
