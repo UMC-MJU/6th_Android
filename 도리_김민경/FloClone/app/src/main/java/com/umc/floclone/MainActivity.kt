@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.gson.Gson
 import com.umc.floclone.databinding.ActivityMainBinding
 
@@ -21,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.Theme_FloClone)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.miniPlayerPlayIv.setOnClickListener {
+            val intent = Intent(this, ForeService::class.java)
+            ContextCompat.startForegroundService(this, intent)
+        }
 
         initBottomNavigation()
 
@@ -127,5 +133,11 @@ class MainActivity : AppCompatActivity() {
 
         // 미니플레이어에 반영
         setMiniPlayer(song)
+    }
+
+    fun updateMiniPlayer(album: Album) {
+        binding.miniPlayerTitleTv.text = album.title
+        binding.miniPlayerSingerTv.text = album.singer
+        binding.mainProgressSb.progress = 0
     }
 }

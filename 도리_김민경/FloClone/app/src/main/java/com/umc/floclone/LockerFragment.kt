@@ -6,11 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.gson.Gson
 import com.umc.floclone.databinding.FragmentLockerBinding
 
 class LockerFragment : Fragment() {
     lateinit var binding: FragmentLockerBinding
     private val information = arrayListOf("저장한 곡", "음악파일")
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
