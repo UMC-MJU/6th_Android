@@ -30,19 +30,6 @@ class SongFragment : Fragment() {
             setToggleStatus(true)
         }
 
-        binding.songLalacLayout.setOnClickListener {
-            setFragmentResult("Title", bundleOf("title" to binding.songMusicTitle01Tv.text.toString()))
-            setFragmentResult("Singer", bundleOf("singer" to binding.songSingerName01Tv.text.toString()))
-            (context as MainActivity).supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
-        }
-
-        binding.songFluLayout.setOnClickListener {
-            setFragmentResult("Title", bundleOf("title" to binding.songMusicTitle02Tv.text.toString()))
-            setFragmentResult("Singer", bundleOf("singer" to binding.songSingerName02Tv.text.toString()))
-            (context as MainActivity).supportFragmentManager.beginTransaction()
-                .replace(R.id.main_frm, AlbumFragment()).commitAllowingStateLoss()
-        }
         return binding.root
     }
 
