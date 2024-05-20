@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager2.widget.ViewPager2;
@@ -79,15 +80,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final HorizontalScrollView homeMusicVideoHv;
 
   @NonNull
-  public final CardView homePannelAlbumBibi;
-
-  @NonNull
-  public final CardView homePannelAlbumBts;
-
-  @NonNull
-  public final CardView homePannelAlbumCv;
-
-  @NonNull
   public final ImageView homePannelAlbumImg1Iv;
 
   @NonNull
@@ -95,9 +87,6 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   @NonNull
   public final TextView homePannelAlbumInfoIv;
-
-  @NonNull
-  public final ImageView homePannelAlbumLilacIv;
 
   @NonNull
   public final TextView homePannelAlbumSinger2Tv;
@@ -145,24 +134,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView homePannelTitleIv;
 
   @NonNull
-  public final TextView homePannelTodayMusicSinger1Tv;
-
-  @NonNull
-  public final TextView homePannelTodayMusicSinger2Tv;
-
-  @NonNull
-  public final TextView homePannelTodayMusicSinger3Tv;
-
-  @NonNull
-  public final TextView homePannelTodayMusicTitle1Tv;
-
-  @NonNull
-  public final TextView homePannelTodayMusicTitle2Tv;
-
-  @NonNull
-  public final TextView homePannelTodayMusicTitle3Tv;
-
-  @NonNull
   public final ImageView homePannelTwitterIv;
 
   @NonNull
@@ -172,10 +143,10 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final ImageView homePannelYoutubeIv;
 
   @NonNull
-  public final TextView homeTodayMusicInsideTv;
+  public final RecyclerView homeTodayMusicAlbumRv;
 
   @NonNull
-  public final HorizontalScrollView homeTodayMusicOutsideHv;
+  public final TextView homeTodayMusicInsideTv;
 
   @NonNull
   public final TextView homeTodayMusicOutsideTv;
@@ -195,10 +166,8 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull CardView homeMusicVideoCollection2Cv, @NonNull ImageView homeMusicVideoCollection2Iv,
       @NonNull CardView homeMusicVideoCollection3Cv, @NonNull ImageView homeMusicVideoCollection3Iv,
       @NonNull TextView homeMusicVideoCollectionTv, @NonNull HorizontalScrollView homeMusicVideoHv,
-      @NonNull CardView homePannelAlbumBibi, @NonNull CardView homePannelAlbumBts,
-      @NonNull CardView homePannelAlbumCv, @NonNull ImageView homePannelAlbumImg1Iv,
-      @NonNull ImageView homePannelAlbumImgIv, @NonNull TextView homePannelAlbumInfoIv,
-      @NonNull ImageView homePannelAlbumLilacIv, @NonNull TextView homePannelAlbumSinger2Tv,
+      @NonNull ImageView homePannelAlbumImg1Iv, @NonNull ImageView homePannelAlbumImgIv,
+      @NonNull TextView homePannelAlbumInfoIv, @NonNull TextView homePannelAlbumSinger2Tv,
       @NonNull TextView homePannelAlbumSingerTv, @NonNull TextView homePannelAlbumTitle2Tv,
       @NonNull TextView homePannelAlbumTitleTv, @NonNull ViewPager2 homePannelBackgroundIv,
       @NonNull ImageView homePannelBtnPlayIv, @NonNull ImageView homePannelButtonNuguIv,
@@ -206,17 +175,10 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull ImageView homePannelDiscoveryBannerIv, @NonNull ImageView homePannelFacebookIv,
       @NonNull ImageView homePannelInstagramIv, @NonNull ImageView homePannelMusicTitleBtnIv,
       @NonNull TextView homePannelMusicTitleTv, @NonNull TextView homePannelTitleIv,
-      @NonNull TextView homePannelTodayMusicSinger1Tv,
-      @NonNull TextView homePannelTodayMusicSinger2Tv,
-      @NonNull TextView homePannelTodayMusicSinger3Tv,
-      @NonNull TextView homePannelTodayMusicTitle1Tv,
-      @NonNull TextView homePannelTodayMusicTitle2Tv,
-      @NonNull TextView homePannelTodayMusicTitle3Tv, @NonNull ImageView homePannelTwitterIv,
-      @NonNull ImageView homePannelYanolzaBannerIv, @NonNull ImageView homePannelYoutubeIv,
-      @NonNull TextView homeTodayMusicInsideTv,
-      @NonNull HorizontalScrollView homeTodayMusicOutsideHv,
-      @NonNull TextView homeTodayMusicOutsideTv, @NonNull TextView homeTodayMusicTotalTv,
-      @NonNull CircleIndicator3 indicator) {
+      @NonNull ImageView homePannelTwitterIv, @NonNull ImageView homePannelYanolzaBannerIv,
+      @NonNull ImageView homePannelYoutubeIv, @NonNull RecyclerView homeTodayMusicAlbumRv,
+      @NonNull TextView homeTodayMusicInsideTv, @NonNull TextView homeTodayMusicOutsideTv,
+      @NonNull TextView homeTodayMusicTotalTv, @NonNull CircleIndicator3 indicator) {
     this.rootView = rootView;
     this.homeAlbumPotcast01Cv = homeAlbumPotcast01Cv;
     this.homeAlbumPotcast01Iv = homeAlbumPotcast01Iv;
@@ -236,13 +198,9 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.homeMusicVideoCollection3Iv = homeMusicVideoCollection3Iv;
     this.homeMusicVideoCollectionTv = homeMusicVideoCollectionTv;
     this.homeMusicVideoHv = homeMusicVideoHv;
-    this.homePannelAlbumBibi = homePannelAlbumBibi;
-    this.homePannelAlbumBts = homePannelAlbumBts;
-    this.homePannelAlbumCv = homePannelAlbumCv;
     this.homePannelAlbumImg1Iv = homePannelAlbumImg1Iv;
     this.homePannelAlbumImgIv = homePannelAlbumImgIv;
     this.homePannelAlbumInfoIv = homePannelAlbumInfoIv;
-    this.homePannelAlbumLilacIv = homePannelAlbumLilacIv;
     this.homePannelAlbumSinger2Tv = homePannelAlbumSinger2Tv;
     this.homePannelAlbumSingerTv = homePannelAlbumSingerTv;
     this.homePannelAlbumTitle2Tv = homePannelAlbumTitle2Tv;
@@ -258,17 +216,11 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.homePannelMusicTitleBtnIv = homePannelMusicTitleBtnIv;
     this.homePannelMusicTitleTv = homePannelMusicTitleTv;
     this.homePannelTitleIv = homePannelTitleIv;
-    this.homePannelTodayMusicSinger1Tv = homePannelTodayMusicSinger1Tv;
-    this.homePannelTodayMusicSinger2Tv = homePannelTodayMusicSinger2Tv;
-    this.homePannelTodayMusicSinger3Tv = homePannelTodayMusicSinger3Tv;
-    this.homePannelTodayMusicTitle1Tv = homePannelTodayMusicTitle1Tv;
-    this.homePannelTodayMusicTitle2Tv = homePannelTodayMusicTitle2Tv;
-    this.homePannelTodayMusicTitle3Tv = homePannelTodayMusicTitle3Tv;
     this.homePannelTwitterIv = homePannelTwitterIv;
     this.homePannelYanolzaBannerIv = homePannelYanolzaBannerIv;
     this.homePannelYoutubeIv = homePannelYoutubeIv;
+    this.homeTodayMusicAlbumRv = homeTodayMusicAlbumRv;
     this.homeTodayMusicInsideTv = homeTodayMusicInsideTv;
-    this.homeTodayMusicOutsideHv = homeTodayMusicOutsideHv;
     this.homeTodayMusicOutsideTv = homeTodayMusicOutsideTv;
     this.homeTodayMusicTotalTv = homeTodayMusicTotalTv;
     this.indicator = indicator;
@@ -409,24 +361,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.home_pannel_album_bibi;
-      CardView homePannelAlbumBibi = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelAlbumBibi == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_album_bts;
-      CardView homePannelAlbumBts = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelAlbumBts == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_album_cv;
-      CardView homePannelAlbumCv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelAlbumCv == null) {
-        break missingId;
-      }
-
       id = R.id.home_pannel_album_img1_iv;
       ImageView homePannelAlbumImg1Iv = ViewBindings.findChildViewById(rootView, id);
       if (homePannelAlbumImg1Iv == null) {
@@ -442,12 +376,6 @@ public final class FragmentHomeBinding implements ViewBinding {
       id = R.id.home_pannel_album_info_iv;
       TextView homePannelAlbumInfoIv = ViewBindings.findChildViewById(rootView, id);
       if (homePannelAlbumInfoIv == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_album_lilac_iv;
-      ImageView homePannelAlbumLilacIv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelAlbumLilacIv == null) {
         break missingId;
       }
 
@@ -541,42 +469,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.home_pannel_today_music_singer1_tv;
-      TextView homePannelTodayMusicSinger1Tv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelTodayMusicSinger1Tv == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_today_music_singer2_tv;
-      TextView homePannelTodayMusicSinger2Tv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelTodayMusicSinger2Tv == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_today_music_singer3_tv;
-      TextView homePannelTodayMusicSinger3Tv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelTodayMusicSinger3Tv == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_today_music_title1_tv;
-      TextView homePannelTodayMusicTitle1Tv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelTodayMusicTitle1Tv == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_today_music_title2_tv;
-      TextView homePannelTodayMusicTitle2Tv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelTodayMusicTitle2Tv == null) {
-        break missingId;
-      }
-
-      id = R.id.home_pannel_today_music_title3_tv;
-      TextView homePannelTodayMusicTitle3Tv = ViewBindings.findChildViewById(rootView, id);
-      if (homePannelTodayMusicTitle3Tv == null) {
-        break missingId;
-      }
-
       id = R.id.home_pannel_twitter_iv;
       ImageView homePannelTwitterIv = ViewBindings.findChildViewById(rootView, id);
       if (homePannelTwitterIv == null) {
@@ -595,15 +487,15 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.home_today_music_inside_tv;
-      TextView homeTodayMusicInsideTv = ViewBindings.findChildViewById(rootView, id);
-      if (homeTodayMusicInsideTv == null) {
+      id = R.id.home_today_music_album_rv;
+      RecyclerView homeTodayMusicAlbumRv = ViewBindings.findChildViewById(rootView, id);
+      if (homeTodayMusicAlbumRv == null) {
         break missingId;
       }
 
-      id = R.id.home_today_music_outside_hv;
-      HorizontalScrollView homeTodayMusicOutsideHv = ViewBindings.findChildViewById(rootView, id);
-      if (homeTodayMusicOutsideHv == null) {
+      id = R.id.home_today_music_inside_tv;
+      TextView homeTodayMusicInsideTv = ViewBindings.findChildViewById(rootView, id);
+      if (homeTodayMusicInsideTv == null) {
         break missingId;
       }
 
@@ -631,18 +523,14 @@ public final class FragmentHomeBinding implements ViewBinding {
           homeMusicDailyTitleTv, homeMusicVideoCollection1Cv, homeMusicVideoCollection1Iv,
           homeMusicVideoCollection2Cv, homeMusicVideoCollection2Iv, homeMusicVideoCollection3Cv,
           homeMusicVideoCollection3Iv, homeMusicVideoCollectionTv, homeMusicVideoHv,
-          homePannelAlbumBibi, homePannelAlbumBts, homePannelAlbumCv, homePannelAlbumImg1Iv,
-          homePannelAlbumImgIv, homePannelAlbumInfoIv, homePannelAlbumLilacIv,
+          homePannelAlbumImg1Iv, homePannelAlbumImgIv, homePannelAlbumInfoIv,
           homePannelAlbumSinger2Tv, homePannelAlbumSingerTv, homePannelAlbumTitle2Tv,
           homePannelAlbumTitleTv, homePannelBackgroundIv, homePannelBtnPlayIv,
           homePannelButtonNuguIv, homePannelButtonSettingIv, homePannelButtonTicketIv,
           homePannelDiscoveryBannerIv, homePannelFacebookIv, homePannelInstagramIv,
-          homePannelMusicTitleBtnIv, homePannelMusicTitleTv, homePannelTitleIv,
-          homePannelTodayMusicSinger1Tv, homePannelTodayMusicSinger2Tv,
-          homePannelTodayMusicSinger3Tv, homePannelTodayMusicTitle1Tv, homePannelTodayMusicTitle2Tv,
-          homePannelTodayMusicTitle3Tv, homePannelTwitterIv, homePannelYanolzaBannerIv,
-          homePannelYoutubeIv, homeTodayMusicInsideTv, homeTodayMusicOutsideHv,
-          homeTodayMusicOutsideTv, homeTodayMusicTotalTv, indicator);
+          homePannelMusicTitleBtnIv, homePannelMusicTitleTv, homePannelTitleIv, homePannelTwitterIv,
+          homePannelYanolzaBannerIv, homePannelYoutubeIv, homeTodayMusicAlbumRv,
+          homeTodayMusicInsideTv, homeTodayMusicOutsideTv, homeTodayMusicTotalTv, indicator);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

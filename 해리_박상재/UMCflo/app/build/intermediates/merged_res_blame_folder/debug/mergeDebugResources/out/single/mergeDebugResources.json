@@ -132,10 +132,6 @@
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplay_mvplay.png"
     },
     {
-        "merged": "com.example.umcflo.app-debug-32:/layout_activity_main.xml.flat",
-        "source": "com.example.umcflo.app-main-34:/layout/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_skip_next_32.png.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_skip_next_32.png"
     },
@@ -166,6 +162,10 @@
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_locker_savedsong.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_locker_savedsong.xml"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_unlike_off.png.flat",
@@ -204,6 +204,10 @@
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_twitter_btn.png"
     },
     {
+        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_item_album.xml.flat",
+        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\item_album.xml"
+    },
+    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_main_btm_search_selector.xml.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\main_btm_search_selector.xml"
     },
@@ -240,12 +244,12 @@
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-ldpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_setting_phone.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_setting_phone.png"
-    },
-    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_locker.xml.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker.xml"
+    },
+    {
+        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_setting_phone.png.flat",
+        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_setting_phone.png"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_video_exp.png.flat",
@@ -308,16 +312,16 @@
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_default_4_x_1.png"
     },
     {
+        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\raw_music_lilac.mp3.flat",
+        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\raw\\music_lilac.mp3"
+    },
+    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_home_viewpager_exp.png.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_home_viewpager_exp.png"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_home_viewpager_exp2.png.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_home_viewpager_exp2.png"
-    },
-    {
-        "merged": "com.example.umcflo.app-debug-32:/raw_music_lilac.mp3.flat",
-        "source": "com.example.umcflo.app-main-34:/raw/music_lilac.mp3"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-hdpi_ic_launcher_foreground.png.flat",
@@ -546,6 +550,10 @@
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_related.png.flat",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_related.png"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/layout_item_locker_album.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/item_locker_album.xml"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_blue_radius.xml.flat",

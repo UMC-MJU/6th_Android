@@ -110,8 +110,11 @@ class MainActivity : AppCompatActivity() {
             gson.fromJson(songJson, Song::class.java)
         }
         setMiniPlayer(song)
-
     }
 
-
+    fun updateMainPlayerCl(album : Album) {
+        binding.mainMiniplayerTitleTv.text = album.title
+        binding.mainMiniplayerSingerTv.text = album.singer
+        binding.mainMiniplayerProgressSb.progress = 0
+    }
 }

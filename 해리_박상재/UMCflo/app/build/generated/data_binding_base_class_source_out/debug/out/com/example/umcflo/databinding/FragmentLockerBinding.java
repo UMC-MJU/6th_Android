@@ -4,6 +4,7 @@ package com.example.umcflo.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,20 +32,33 @@ public final class FragmentLockerBinding implements ViewBinding {
   public final TextView lockerLoginTv;
 
   @NonNull
-  public final TextView lockerNotsavedTv;
+  public final ImageView lockerPlayAllImgIv;
+
+  @NonNull
+  public final TextView lockerPlayAllTv;
+
+  @NonNull
+  public final ImageView lockerSelectAllImgIv;
+
+  @NonNull
+  public final TextView lockerSelectAllTv;
 
   @NonNull
   public final TextView lockerTitleTv;
 
   private FragmentLockerBinding(@NonNull ConstraintLayout rootView,
       @NonNull TabLayout lockerContentTb, @NonNull ViewPager2 lockerContentVp,
-      @NonNull TextView lockerLoginTv, @NonNull TextView lockerNotsavedTv,
-      @NonNull TextView lockerTitleTv) {
+      @NonNull TextView lockerLoginTv, @NonNull ImageView lockerPlayAllImgIv,
+      @NonNull TextView lockerPlayAllTv, @NonNull ImageView lockerSelectAllImgIv,
+      @NonNull TextView lockerSelectAllTv, @NonNull TextView lockerTitleTv) {
     this.rootView = rootView;
     this.lockerContentTb = lockerContentTb;
     this.lockerContentVp = lockerContentVp;
     this.lockerLoginTv = lockerLoginTv;
-    this.lockerNotsavedTv = lockerNotsavedTv;
+    this.lockerPlayAllImgIv = lockerPlayAllImgIv;
+    this.lockerPlayAllTv = lockerPlayAllTv;
+    this.lockerSelectAllImgIv = lockerSelectAllImgIv;
+    this.lockerSelectAllTv = lockerSelectAllTv;
     this.lockerTitleTv = lockerTitleTv;
   }
 
@@ -93,9 +107,27 @@ public final class FragmentLockerBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.locker_notsaved_tv;
-      TextView lockerNotsavedTv = ViewBindings.findChildViewById(rootView, id);
-      if (lockerNotsavedTv == null) {
+      id = R.id.locker_play_all_img_iv;
+      ImageView lockerPlayAllImgIv = ViewBindings.findChildViewById(rootView, id);
+      if (lockerPlayAllImgIv == null) {
+        break missingId;
+      }
+
+      id = R.id.locker_play_all_tv;
+      TextView lockerPlayAllTv = ViewBindings.findChildViewById(rootView, id);
+      if (lockerPlayAllTv == null) {
+        break missingId;
+      }
+
+      id = R.id.locker_select_all_img_iv;
+      ImageView lockerSelectAllImgIv = ViewBindings.findChildViewById(rootView, id);
+      if (lockerSelectAllImgIv == null) {
+        break missingId;
+      }
+
+      id = R.id.locker_select_all_tv;
+      TextView lockerSelectAllTv = ViewBindings.findChildViewById(rootView, id);
+      if (lockerSelectAllTv == null) {
         break missingId;
       }
 
@@ -106,7 +138,8 @@ public final class FragmentLockerBinding implements ViewBinding {
       }
 
       return new FragmentLockerBinding((ConstraintLayout) rootView, lockerContentTb,
-          lockerContentVp, lockerLoginTv, lockerNotsavedTv, lockerTitleTv);
+          lockerContentVp, lockerLoginTv, lockerPlayAllImgIv, lockerPlayAllTv, lockerSelectAllImgIv,
+          lockerSelectAllTv, lockerTitleTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
