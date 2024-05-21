@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+<<<<<<< Updated upstream
+=======
+    namespace 'com.example.flo'
+>>>>>>> Stashed changes
 }
 
 dependencies {

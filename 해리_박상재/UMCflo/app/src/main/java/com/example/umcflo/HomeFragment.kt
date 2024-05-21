@@ -66,7 +66,10 @@ class HomeFragment : Fragment() {
 
         }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         val bannerAdapter = BannerVPAdapter(this)
         bannerAdapter.addFragment(BannerFragment(R.drawable.img_home_viewpager_exp))
         bannerAdapter.addFragment(BannerFragment(R.drawable.img_home_viewpager_exp2))

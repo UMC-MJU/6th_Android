@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+<<<<<<< Updated upstream
+=======
+import androidx.activity.result.ActivityResultLauncher
+>>>>>>> Stashed changes
 import com.example.flo.databinding.ActivityMainBinding
 import com.google.gson.Gson
 import java.util.concurrent.locks.Lock
@@ -12,6 +16,11 @@ import java.util.concurrent.locks.Lock
 class MainActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
+<<<<<<< Updated upstream
+=======
+    lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
+
+>>>>>>> Stashed changes
     private var song:Song = Song()
     private var gson: Gson = Gson()
 
@@ -30,7 +39,13 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying", song.isPlaying)
             intent.putExtra("music", song.music)
+<<<<<<< Updated upstream
             startActivity(intent)
+=======
+//            startActivity(intent)
+            activityResultLauncher.launch(intent)
+
+>>>>>>> Stashed changes
         }
 
         initBottomNavigation()

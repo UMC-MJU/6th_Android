@@ -10,14 +10,20 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.umcflo.databinding.ActivityMainBinding
+<<<<<<< Updated upstream
 import com.google.gson.Gson
+=======
+>>>>>>> Stashed changes
 
 class MainActivity : AppCompatActivity() {
     lateinit var activityResultLauncher:ActivityResultLauncher<Intent>
     lateinit var  binding: ActivityMainBinding
+<<<<<<< Updated upstream
     private  var song:Song = Song()
     private  var gson: Gson = Gson()
 
+=======
+>>>>>>> Stashed changes
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +33,15 @@ class MainActivity : AppCompatActivity() {
 
         initBottomNavigation()
 
+<<<<<<< Updated upstream
+=======
+        val song = Song(
+            binding.miniPlayerTitleTv.text.toString(),
+            binding.miniPlayerSingerTv.text.toString(),
+            0,60,false
+        )
+
+>>>>>>> Stashed changes
         activityResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
         ) { result ->
@@ -47,7 +62,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("second", song.second)
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying", song.isPlaying)
+<<<<<<< Updated upstream
             intent.putExtra("music", song.music)
+=======
+>>>>>>> Stashed changes
             activityResultLauncher.launch(intent)
         }
 
@@ -91,6 +109,7 @@ class MainActivity : AppCompatActivity() {
             false
         }
     }
+<<<<<<< Updated upstream
 
     private fun setMiniPlayer(song: Song){
         binding.mainMiniplayerTitleTv.text = song.title
@@ -114,4 +133,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+=======
+>>>>>>> Stashed changes
 }
