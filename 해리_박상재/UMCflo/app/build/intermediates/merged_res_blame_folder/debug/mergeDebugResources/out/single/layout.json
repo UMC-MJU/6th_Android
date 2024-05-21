@@ -4,12 +4,24 @@
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker_savedsong.xml"
     },
     {
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_locker_savedsong.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_locker_savedsong.xml"
+    },
+    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_video.xml",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_video.xml"
     },
     {
+        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\item_album.xml",
+        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\item_album.xml"
+    },
+    {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_pannel.xml",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_pannel.xml"
+    },
+    {
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/item_locker_album.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/item_locker_album.xml"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_home.xml",
@@ -42,10 +54,6 @@
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_song.xml",
         "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_song.xml"
-    },
-    {
-        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "com.example.umcflo.app-main-34:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_album.xml",
