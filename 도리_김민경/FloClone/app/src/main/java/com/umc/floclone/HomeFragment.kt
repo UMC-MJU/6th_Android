@@ -87,6 +87,7 @@ class HomeFragment(homePannelCl: Int) : Fragment(), AlbumRecyclerViewAdapter.Com
 
         startAutoSlide(homeAdapter)
 
+
         return binding.root
     }
 
