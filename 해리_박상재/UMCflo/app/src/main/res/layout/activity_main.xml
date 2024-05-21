@@ -14,7 +14,6 @@
         app:layout_constraintBottom_toTopOf="@id/main_player_cl"
         app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< Updated upstream
     <SeekBar
         android:id="@+id/main_miniplayer_progress_sb"
         android:layout_width="match_parent"
@@ -32,8 +31,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/main_player_cl" />
 
-=======
->>>>>>> Stashed changes
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_player_cl"
@@ -53,11 +50,8 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-<<<<<<< Updated upstream
                 android:id="@+id/mainMiniplayerTitleTv"
-=======
-                android:id="@+id/mini_player_title_tv"
->>>>>>> Stashed changes
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
@@ -65,11 +59,8 @@
                 android:textColor="@color/black" />
 
             <TextView
-<<<<<<< Updated upstream
                 android:id="@+id/mainMiniplayerSingerTv"
-=======
-                android:id="@+id/mini_player_singer_tv"
->>>>>>> Stashed changes
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"

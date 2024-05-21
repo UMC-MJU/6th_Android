@@ -1,642 +1,638 @@
 [
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\menu\\bottom_nav_menu.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_apple_44.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/apple_44.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_main_ticket.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_main_ticket.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_search_no_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_search_no_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_playlist_select_off.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_playlist_select_off.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_banner.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_banner.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_panel_play_large.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_panel_play_large.png"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_bangbangbang.jpeg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\bangbangbang.jpeg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_fragment_look_chip_on_background.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/fragment_look_chip_on_background.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_exp4.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_exp4.jpg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_detail.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_detail.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_browse_arrow_right.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_browse_arrow_right.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_setting.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_setting.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_widget_black_play.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/widget_black_play.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_locker_savedalbum.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker_savedalbum.xml"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_textbox_close.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_textbox_close.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_activity_song.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_song.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_exp4.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_exp4.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_panel_play_large.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_panel_play_large.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplayer_next.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplayer_next.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_first_album_default.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_first_album_default.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-xhdpi\\ic_launcher_foreground.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_locker_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_locker_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_jenre_exp_3.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_jenre_exp_3.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_purple_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/purple_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_down.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_down.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_home_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_locker_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_locker_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_facebook_btn.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_facebook_btn.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_facebook_btn.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_facebook_btn.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_search_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_search_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_locker_savedsong.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker_savedsong.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_playlist_select_off.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_playlist_select_off.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_main_mike.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_main_mike.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_instagram.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_instagram.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_kakako_44.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\kakako_44.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_gray_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/gray_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btm_color_selector.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btm_color_selector.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_button_background_gray_color.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/button_background_gray_color.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_arrow_black.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_arrow_black.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplayer_next.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplayer_next.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_skplanet_musicmate_sc0_2021_03_12_16_59_19.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\skplanet_musicmate_sc0_2021_03_12_16_59_19.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_facebook.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_facebook.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_browse_arrow_right.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_browse_arrow_right.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_exp.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_exp.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-xhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_jenre_exp_2.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_jenre_exp_2.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_pannel.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_pannel.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_nugu.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_nugu.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_related.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_related.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_textview_background_color_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\textview_background_color_radius.xml"
+        "merged": "com.example.umcflo.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_more.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_more.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_jenre_exp_1.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_jenre_exp_1.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_instagram.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_instagram.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_home.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplayer_go_list.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplayer_go_list.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_aquaman.jpeg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/aquaman.jpeg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplay_mvplay.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplay_mvplay.png"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_skip_next_32.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_skip_next_32.png"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_actionbar_instagram.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_actionbar_instagram.png"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_grey_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\grey_radius.xml"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_search_no_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_search_no_select.png"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-mdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-mdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_iu_album.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_iu_album.png"
-    },
-    {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.umcflo.app-debug-32:/layout_fragment_locker_savedsong.xml.flat",
         "source": "com.example.umcflo.app-main-34:/layout/fragment_locker_savedsong.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_unlike_off.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_unlike_off.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_button_background_black_color.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/button_background_black_color.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_input_password.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_input_password.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_jenre_exp_3.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_jenre_exp_3.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_jenre_exp_1.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_jenre_exp_1.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_skip_previous_32.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_skip_previous_32.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_purple_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\purple_radius.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_my_like_on.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_my_like_on.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_fragment_look_chip_on_background.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\fragment_look_chip_on_background.xml"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_locker.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_locker.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_titlebar_close.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_titlebar_close.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_more.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_more.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_instagram_btn.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_instagram_btn.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_nugu.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_nugu.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_selector_indicator.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\selector_indicator.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_grey_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/grey_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_twitter_btn.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_twitter_btn.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_video_exp.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_video_exp.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_item_album.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\item_album.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_play.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_play.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_main_btm_search_selector.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\main_btm_search_selector.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_locker_no_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_locker_no_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_search_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_search_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_setting_phone.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_setting_phone.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_eq_off.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_eq_off.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_look.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_look.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_main_setting.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_main_setting.png"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_notifications_black_24dp.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_main_btm_home_selector.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/main_btm_home_selector.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_default_4_x_1.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_default_4_x_1.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_my_like_off.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_my_like_off.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_toggle_off.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_toggle_off.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_main_btm_look_selector.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/main_btm_look_selector.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-ldpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-ldpi\\ic_launcher_foreground.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_main_btm_my_selector.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/main_btm_my_selector.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_locker.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_eq_off.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_eq_off.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_setting_phone.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_setting_phone.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_down.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_down.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_video_exp.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_video_exp.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_exp5.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_exp5.jpg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_beautiful.jpeg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\beautiful.jpeg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_button_background_flo_color.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\button_background_flo_color.xml"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_detail.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_detail.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_pause_32.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_pause_32.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_actionbar_close.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_actionbar_close.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_exp6.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_exp6.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_icon_browse_arrow_right.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/icon_browse_arrow_right.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_exp3.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_exp3.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_textbox_close.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_textbox_close.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_song.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_song.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_naver_44.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/naver_44.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_video.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_video.xml"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_locker_no_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_locker_no_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplayer_go_list.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplayer_go_list.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_textview_background_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\textview_background_radius.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplayer_play.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplayer_play.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_home_no_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_home_no_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_exp2.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_exp2.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_look_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_look_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/xml_backup_rules.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_my_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_my_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable__786635_719636_923.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/_786635_719636_923.jpg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\xml\\backup_rules.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_selector_indicator.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/selector_indicator.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_default_4_x_1.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_default_4_x_1.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_flo_logo.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_flo_logo.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\raw_music_lilac.mp3.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\raw\\music_lilac.mp3"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_twitter.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_twitter.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_home_viewpager_exp.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_home_viewpager_exp.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_fragment_look_chart_background.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/fragment_look_chart_background.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_home_viewpager_exp2.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_home_viewpager_exp2.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ico_20_logo_tid_white.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ico_20_logo_tid_white.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-hdpi\\ic_launcher_foreground.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_playlist_select_on.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_playlist_select_on.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_search.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_search.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_main_mike.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_main_mike.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_exp.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_exp.png"
+        "merged": "com.example.umcflo.app-debug-32:/raw_music_lilac.mp3.flat",
+        "source": "com.example.umcflo.app-main-34:/raw/music_lilac.mp3"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_main_arrow_more.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_main_arrow_more.png"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_apple_44.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\apple_44.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_album.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_album.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_youtube_btn.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_youtube_btn.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_random_inactive.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_random_inactive.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable__786635_719636_923.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\_786635_719636_923.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_unlike_on.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_unlike_on.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_twitter_btn.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_twitter_btn.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplay_pause.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplay_pause.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_play_32.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_play_32.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_my_no_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_my_no_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_youtube.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_youtube.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_kakako_44.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/kakako_44.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_album.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_album.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplay_mvpause.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplay_mvpause.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_repeat_inactive.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_repeat_inactive.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_arrow_more.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_arrow_more.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_discovery_banner_aos.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\discovery_banner_aos.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_lp.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_lp.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-hdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_textview_background_select_color_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\textview_background_select_color_radius.xml"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_song.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_song.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_main_btm_color_selector.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\main_btm_color_selector.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_look_no_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_look_no_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_activity_song.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_song.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_textview_background_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/textview_background_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_facebook.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_facebook.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_splash.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/splash.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-pngs-28:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_home_viewpager_exp2.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_home_viewpager_exp2.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_arrow_more.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_arrow_more.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_video.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_video.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_my_like_on.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_my_like_on.png"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_flo_logo.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_flo_logo.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_repeat_inactive.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_repeat_inactive.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_my_no_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_my_no_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_bangbangbang.jpeg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/bangbangbang.jpeg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_lp.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_lp.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_home_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_home_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_pannel.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_pannel.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_pause_32.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_pause_32.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btm_color_selector.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btm_color_selector.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_aquaman.jpeg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\aquaman.jpeg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplay_mvplay.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplay_mvplay.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplayer_previous.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplayer_previous.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_arrow_black.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_arrow_black.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_random_inactive.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_random_inactive.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_unlike_on.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_unlike_on.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_button_background_white_color.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\button_background_white_color.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_titlebar_close.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_titlebar_close.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_home_black_24dp.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_input_password.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_input_password.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-xxhdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_playlist_select_on.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_playlist_select_on.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_home_viewpager_exp.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_home_viewpager_exp.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_naver_44.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\naver_44.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_play_32.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_play_32.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplayer_previous.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplayer_previous.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "com.example.umcflo.app-debug-32:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_potcast_exp.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_potcast_exp.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_main_ticket.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_main_ticket.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_my_like_off.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_my_like_off.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_look_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_look_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_widget_black_play.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\widget_black_play.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_beautiful.jpeg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/beautiful.jpeg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_look_no_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_look_no_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_main_btm_color_selector.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/main_btm_color_selector.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_actionbar_instagram.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_actionbar_instagram.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_look.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_look.xml"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_input_password_off.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_input_password_off.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_item_album.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/item_album.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_twitter.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_twitter.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_toggle_on.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_toggle_on.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_bottom_home_select.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_bottom_home_select.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_blue_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/blue_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_home.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_exp5.jpg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_exp5.jpg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_my_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_my_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_bibi_album.jpeg.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\bibi_album.jpeg"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_input_password_off.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_input_password_off.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_main_btm_home_selector.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\main_btm_home_selector.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_iu_album.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_iu_album.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_main_btm_look_selector.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\main_btm_look_selector.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_go_list.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_go_list.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplayer_play.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplayer_play.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_discovery_banner_aos.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/discovery_banner_aos.jpg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_fragment_look_chart_background.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\fragment_look_chart_background.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-mdpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_splash.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\splash.xml"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_related.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_related.png"
+        "merged": "com.example.umcflo.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "com.example.umcflo.app-debug-32:/layout_item_locker_album.xml.flat",
         "source": "com.example.umcflo.app-main-34:/layout/item_locker_album.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_blue_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\blue_radius.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_main_btm_search_selector.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/main_btm_search_selector.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_first_album_default.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_first_album_default.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_instagram_btn.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_instagram_btn.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_nugu_btn_skip_previous_32.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\nugu_btn_skip_previous_32.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_toggle_off.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_toggle_off.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_actionbar_close.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_actionbar_close.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_potcast_exp.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_potcast_exp.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_button_background_gray_color.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\button_background_gray_color.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_main_arrow_more.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_main_arrow_more.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ico_20_logo_tid_white.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ico_20_logo_tid_white.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_textview_background_color_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/textview_background_color_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_main_btm_my_selector.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\main_btm_my_selector.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_button_background_white_color.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/button_background_white_color.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_main.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_textview_background_select_color_radius.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/textview_background_select_color_radius.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_img_album_exp2.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\img_album_exp2.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_jenre_exp_2.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_jenre_exp_2.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_fragment_banner.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_banner.xml"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_search.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_gray_radius.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\gray_radius.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_unlike_off.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_unlike_off.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_miniplay_mvpause.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_miniplay_mvpause.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_exp3.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_exp3.jpg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_ic_main_youtube_btn.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\ic_main_youtube_btn.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_player_setting.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_player_setting.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_main_youtube.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_main_youtube.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_icon_browse_arrow_right.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\icon_browse_arrow_right.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_bottom_home_no_select.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_bottom_home_no_select.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_toggle_on.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_toggle_on.png"
+        "merged": "com.example.umcflo.app-debug-32:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_go_list.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_go_list.png"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_skplanet_musicmate_sc0_2021_03_12_16_59_19.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/skplanet_musicmate_sc0_2021_03_12_16_59_19.jpg"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_btn_player_play.png.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\btn_player_play.png"
+        "merged": "com.example.umcflo.app-debug-32:/layout_fragment_locker_savedalbum.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_locker_savedalbum.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_fragment_look_chip_off_background.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\fragment_look_chip_off_background.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_fragment_look_chip_off_background.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/fragment_look_chip_off_background.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_splash.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.umcflo.app-pngs-28:/drawable-ldpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-debug-32:\\drawable_button_background_black_color.xml.flat",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\drawable\\button_background_black_color.xml"
+        "merged": "com.example.umcflo.app-debug-32:/drawable_nugu_btn_skip_next_32.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/nugu_btn_skip_next_32.png"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/drawable_img_album_exp6.jpg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/img_album_exp6.jpg"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_main_setting.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_main_setting.png"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/drawable_btn_miniplay_pause.png.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/btn_miniplay_pause.png"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/drawable_bibi_album.jpeg.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/bibi_album.jpeg"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/drawable_button_background_flo_color.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/drawable/button_background_flo_color.xml"
+    },
+    {
+        "merged": "com.example.umcflo.app-debug-32:/layout_activity_splash.xml.flat",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_splash.xml"
     }
 ]

@@ -3,10 +3,8 @@ package com.example.umcflo
 import android.content.Intent
 import android.media.AsyncPlayer
 import android.media.Image
-<<<<<<< Updated upstream
 import android.media.MediaPlayer
-=======
->>>>>>> Stashed changes
+
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -15,10 +13,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.umcflo.databinding.ActivitySongBinding
-<<<<<<< Updated upstream
 import com.google.gson.Gson
-=======
->>>>>>> Stashed changes
+
 
 class SongActivity : AppCompatActivity() {
 
@@ -26,12 +22,10 @@ class SongActivity : AppCompatActivity() {
     lateinit var song: Song
     //전역변수로 스레드 하나를 생성하고 아래에 송객체를 초기화하며 타이머 객채를 생성
     lateinit var timer: Timer
-<<<<<<< Updated upstream
     //미디어파일 재생 ?뜻은 null값이 들어올 수도 있다는 의미(해제용)
     private  var mediaPlayer: MediaPlayer? = null
     private  var gson: Gson = Gson()
-=======
->>>>>>> Stashed changes
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -88,12 +82,9 @@ class SongActivity : AppCompatActivity() {
                 intent.getStringExtra("singer")!!,
                 intent.getIntExtra("second", 0),
                 intent.getIntExtra("playTime", 0),
-<<<<<<< Updated upstream
                 intent.getBooleanExtra("isPlaying", false),
                 intent.getStringExtra("music")!!
-=======
-                intent.getBooleanExtra("isPlaying", false)
->>>>>>> Stashed changes
+
             )
         }
         startTimer()
@@ -105,12 +96,10 @@ class SongActivity : AppCompatActivity() {
         binding.songStartTimeTv.text = String.format("%02d:%02d", song.second / 60, song.second%60)
         binding.songEndTimeTv.text = String.format("%02d:%02d", song.playTime / 60, song.playTime%60)
         binding.songProgressSb.progress = if (song.playTime == 0) 0 else (song.second * 1000 / song.playTime)
-<<<<<<< Updated upstream
         //리소스 파일에서 해당 스트링 값으로 파일로 받아오기 위함
         val music = resources.getIdentifier(song.music, "raw", this.packageName)
         mediaPlayer = MediaPlayer.create(this, music)
-=======
->>>>>>> Stashed changes
+
 
         setPlayerStatus(song.isPlaying)
     }
@@ -122,20 +111,16 @@ class SongActivity : AppCompatActivity() {
         if(isPlaying){
             binding.songPauseIv.visibility = View.VISIBLE
             binding.songMiniplayerIv.visibility = View.GONE
-<<<<<<< Updated upstream
             mediaPlayer?.start()
-=======
->>>>>>> Stashed changes
+
         }
         else{
             binding.songMiniplayerIv.visibility = View.VISIBLE
             binding.songPauseIv.visibility = View.GONE
-<<<<<<< Updated upstream
             if(mediaPlayer?.isPlaying == true){ //미디어플레이가 재생중이 아닐때 오류발생 방지
                 mediaPlayer?.pause()
             }
-=======
->>>>>>> Stashed changes
+
         }
     }
 
@@ -157,17 +142,13 @@ class SongActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         timer.interrupt()
-<<<<<<< Updated upstream
         mediaPlayer?.release() // 미디어 플레이어가 갖고있던 리소스 해제
         mediaPlayer = null // 미디어 플레이어 해제
 
     }
 
 
-=======
-    }
 
->>>>>>> Stashed changes
     inner class Timer(private val playTime: Int, var isPlaying: Boolean = true) : Thread() {
         private var second : Int = 0
         private var mills : Float = 0F
@@ -207,7 +188,6 @@ class SongActivity : AppCompatActivity() {
             }
         }
     }
-<<<<<<< Updated upstream
     //사용자가 포커스를 잃었을때 음악이 중지
     override fun onPause() {
         super.onPause()
@@ -226,6 +206,5 @@ class SongActivity : AppCompatActivity() {
         editor.putString("songData", songJson)
         editor.apply() //실제저장공간에 저장
     }
-=======
->>>>>>> Stashed changes
+
 }

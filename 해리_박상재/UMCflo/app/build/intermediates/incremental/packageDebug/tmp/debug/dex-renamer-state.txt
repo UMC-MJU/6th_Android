@@ -1,8 +1,8 @@
-#Mon May 20 18:37:56 KST 2024
-base.0=C\:\\Users\\sangj\\AndroidStudioProjects\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\sangj\\AndroidStudioProjects\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\sangj\\AndroidStudioProjects\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.3=C\:\\Users\\sangj\\AndroidStudioProjects\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+#Tue May 21 16:56:56 KST 2024
+base.0=C\:\\Users\\wkdal\\Desktop\\6th_Android\\harry\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\wkdal\\Desktop\\6th_Android\\harry\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\wkdal\\Desktop\\6th_Android\\harry\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.3=C\:\\Users\\wkdal\\Desktop\\6th_Android\\harry\\UMCflo\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=13/classes.dex

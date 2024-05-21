@@ -1,74 +1,70 @@
 [
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_locker_savedsong.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker_savedsong.xml"
-    },
-    {
         "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_locker_savedsong.xml",
         "source": "com.example.umcflo.app-main-34:/layout/fragment_locker_savedsong.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_video.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_video.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_pannel.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_pannel.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\item_album.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\item_album.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_locker.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_locker.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_pannel.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_pannel.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_album.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_album.xml"
     },
     {
         "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/item_locker_album.xml",
         "source": "com.example.umcflo.app-main-34:/layout/item_locker_album.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_home.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/activity_song.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_song.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\activity_song.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_song.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_home.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_splash.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_look.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_look.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_banner.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_banner.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/item_album.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/item_album.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\activity_main.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_search.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_search.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_search.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_search.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_banner.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_banner.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_look.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_look.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_detail.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_detail.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_song.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_song.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/activity_splash.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_album.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_album.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_locker_savedalbum.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_locker_savedalbum.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_locker.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_locker_savedalbum.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_locker_savedalbum.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_video.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_video.xml"
     },
     {
-        "merged": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-mergeDebugResources-31:\\layout\\fragment_detail.xml",
-        "source": "C:\\Users\\sangj\\.gradle\\daemon\\8.4\\com.example.umcflo.app-main-34:\\layout\\fragment_detail.xml"
+        "merged": "com.example.umcflo.app-mergeDebugResources-31:/layout/fragment_song.xml",
+        "source": "com.example.umcflo.app-main-34:/layout/fragment_song.xml"
     }
 ]
