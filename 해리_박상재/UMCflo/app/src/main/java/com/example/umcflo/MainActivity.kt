@@ -3,8 +3,6 @@ package com.example.umcflo
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
@@ -13,11 +11,10 @@ import com.example.umcflo.databinding.ActivityMainBinding
 import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
-    lateinit var activityResultLauncher:ActivityResultLauncher<Intent>
-    lateinit var  binding: ActivityMainBinding
-    private  var song:Song = Song()
-    private  var gson: Gson = Gson()
-
+    lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
+    lateinit var binding: ActivityMainBinding
+    private var song: Song = Song()
+    private var gson: Gson = Gson()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         initBottomNavigation()
 
+        // ActivityResultLauncher 초기화
         activityResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()
         ) { result ->
@@ -40,35 +38,32 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        // 미니 플레이어 클릭 리스너 설정
         binding.mainPlayerCl.setOnClickListener {
             val intent = Intent(this, SongActivity::class.java)
             intent.putExtra("title", song.title)
-            intent.putExtra("singer",song.singer)
+            intent.putExtra("singer", song.singer)
             intent.putExtra("second", song.second)
             intent.putExtra("playTime", song.playTime)
             intent.putExtra("isPlaying", song.isPlaying)
             intent.putExtra("music", song.music)
             activityResultLauncher.launch(intent)
         }
-
-
     }
 
-    private fun initBottomNavigation(){
+    private fun initBottomNavigation() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.main_frm, HomeFragment())
             .commitAllowingStateLoss()
 
-        binding.mainBnv.setOnItemSelectedListener{ item ->
+        binding.mainBnv.setOnItemSelectedListener { item ->
             when (item.itemId) {
-
                 R.id.homeFragment -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, HomeFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true
                 }
-
                 R.id.lookFragment -> {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, LookFragment())
@@ -92,27 +87,27 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setMiniPlayer(song: Song){
+    private fun setMiniPlayer(song: Song) {
         binding.mainMiniplayerTitleTv.text = song.title
         binding.mainMiniplayerSingerTv.text = song.singer
-        binding.mainMiniplayerProgressSb.progress = (song.second*100000)/song.playTime
+        binding.mainMiniplayerProgressSb.progress = (song.second * 100000) / song.playTime
     }
 
-    //activity 전환이 될땐 onCreate가아닌 start부터 시작
+    // activity 전환이 될 때는 onCreate가 아닌 start부터 시작
     override fun onStart() {
         super.onStart()
-        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE) //song은 sharedPreferences의 이름
-        val songJson = sharedPreferences.getString("songData", null) //songData는 sharedPreferences안에 데이터
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE) // song은 sharedPreferences의 이름
+        val songJson = sharedPreferences.getString("songData", null) // songData는 sharedPreferences 안에 데이터
 
-        song = if(songJson == null){ //데이터 저장값이 없을때 디폴트값
+        song = if (songJson == null) { // 데이터 저장값이 없을 때 디폴트값
             Song("라일락", "아이유(IU)", 0, 60, false, "music_lilac")
-        }else{ //songJson을 자바객체로 변환
+        } else { // songJson을 자바 객체로 변환
             gson.fromJson(songJson, Song::class.java)
         }
         setMiniPlayer(song)
     }
 
-    fun updateMainPlayerCl(album : Album) {
+    fun updateMainPlayerCl(album: Album) {
         binding.mainMiniplayerTitleTv.text = album.title
         binding.mainMiniplayerSingerTv.text = album.singer
         binding.mainMiniplayerProgressSb.progress = 0

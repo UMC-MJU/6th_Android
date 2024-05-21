@@ -37,14 +37,12 @@ class HomeFragment : Fragment(), CommunicationInterface {
             add(Album("Weekend", "태연 (Tae Yeon)", R.drawable.img_album_exp6))
         }
 
-
         val albumRVAdapter = AlbumRVAdapter(albumDatas)
         binding.homeTodayMusicAlbumRv.adapter = albumRVAdapter
         binding.homeTodayMusicAlbumRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
 
-
         albumRVAdapter.setItemClickListener(object : AlbumRVAdapter.OnItemClickListener {
-            override fun onItemClick(album : Album) {
+            override fun onItemClick(album: Album) {
                 changeToAlbumFragment(album)
             }
 
@@ -63,17 +61,16 @@ class HomeFragment : Fragment(), CommunicationInterface {
         binding.homeBannerVp.adapter = bannerAdapter
         binding.homeBannerVp.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
-        val pannelAdpater = PannelVpAdapter(this)
-        pannelAdpater.addFragment(PannelFragment(R.drawable.img_first_album_default))
-        pannelAdpater.addFragment(PannelFragment(R.drawable.skplanet_musicmate_sc0_2021_03_12_16_59_19))
-        pannelAdpater.addFragment(PannelFragment(R.drawable._786635_719636_923))
+        val pannelAdapter = PannelVpAdapter(this)
+        pannelAdapter.addFragment(PannelFragment(R.drawable.img_first_album_default))
+        pannelAdapter.addFragment(PannelFragment(R.drawable.skplanet_musicmate_sc0_2021_03_12_16_59_19))
+        pannelAdapter.addFragment(PannelFragment(R.drawable._786635_719636_923))
 
-        binding.homePannelBackgroundIv.adapter = pannelAdpater
+        binding.homePannelBackgroundIv.adapter = pannelAdapter
         binding.homePannelBackgroundIv.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         binding.indicator.setViewPager(binding.homePannelBackgroundIv)
 
-
-        autoSlide(pannelAdpater)
+        autoSlide(pannelAdapter)
 
         return binding.root
     }
@@ -105,15 +102,12 @@ class HomeFragment : Fragment(), CommunicationInterface {
         }, 3000, 3000)
     }
 
-
     override fun sendData(album: Album) {
         if (activity is MainActivity) {
             val activity = activity as MainActivity
             activity.updateMainPlayerCl(album)
         }
     }
-
-
 }
 
 //리사이클러 뷰를 위해 제거(Album data class)
