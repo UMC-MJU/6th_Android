@@ -62,14 +62,7 @@ class HomeFragment(homePannelCl: Int) : Fragment() {
         startAutoSlide(homeAdapter)
 
 
-        val viewPager2 : ViewPager2 = binding.homePannelVp
-        val circleIndicator3 : CircleIndicator3 = binding.homePannelCi
 
-//        val adapter = BannerViewpagerAdapter(this)
-//
-//        viewPager2.adapter = adapter
-//        circleIndicator3.setViewPager(viewPager2)
-//        startAutoSlide(adapter)
 
         return binding.root
     }
