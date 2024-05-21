@@ -20,7 +20,7 @@
         <SeekBar
             android:id="@+id/main_progress_sb"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
+            android:layout_height="3dp"
             android:background="@null"
             android:paddingStart="0dp"
             android:paddingEnd="0dp"

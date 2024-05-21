@@ -1,10 +1,13 @@
 package com.umc.floclone
 
+import android.app.ActivityManager
+import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -37,20 +40,47 @@ class SongActivity : AppCompatActivity() {
         // 재생 상태 변경
         binding.playerPlayIv.setOnClickListener {
             setPlayerStatus(true)
+            // ForegroundService 설정
+            startStopService()
         }
 
         binding.playerPauseIv.setOnClickListener {
             setPlayerStatus(false)
+            // ForegroundService 설정
+            startStopService()
         }
 
         // 반복 변경
-        binding.playerRepeatInactiveIv.setOnClickListener {
+        binding.playerRepeatInactiveIb.setOnClickListener {
             setRepeatStatus(true)
         }
 
-        binding.playerRepeatActiveIv.setOnClickListener {
+        binding.playerRepeatActiveIb.setOnClickListener {
             setRepeatStatus(false)
         }
+    }
+
+    private fun startStopService() {
+        if (isServiceRunning(ForeService::class.java)) {
+            Toast.makeText(this, "Foreground Service Stopped", Toast.LENGTH_SHORT).show()
+            stopService(Intent(this, ForeService::class.java))
+        } else {
+            Toast.makeText(this, "Foreground Service Started", Toast.LENGTH_SHORT).show()
+            startService(Intent(this, ForeService::class.java))
+        }
+    }
+
+    private fun isServiceRunning(inputClass: Class<ForeService>) : Boolean {
+        val manager : ActivityManager = getSystemService(
+            Context.ACTIVITY_SERVICE
+        ) as ActivityManager
+
+        for (service : ActivityManager.RunningServiceInfo in manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (inputClass.name.equals(service.service.className)) {
+                return true
+            }
+        }
+        return false
     }
 
     private fun initSong() {
@@ -102,11 +132,11 @@ class SongActivity : AppCompatActivity() {
 
     private fun setRepeatStatus(isRepeat: Boolean) {
         if (isRepeat) {     // 전체 반복이 아닐 경우
-            binding.playerRepeatInactiveIv.visibility = View.GONE
-            binding.playerRepeatActiveIv.visibility = View.VISIBLE
+            binding.playerRepeatInactiveIb.visibility = View.GONE
+            binding.playerRepeatActiveIb.visibility = View.VISIBLE
         } else {    // 전체 반복일 경우
-            binding.playerRepeatInactiveIv.visibility = View.VISIBLE
-            binding.playerRepeatActiveIv.visibility = View.GONE
+            binding.playerRepeatInactiveIb.visibility = View.VISIBLE
+            binding.playerRepeatActiveIb.visibility = View.GONE
         }
     }
 
