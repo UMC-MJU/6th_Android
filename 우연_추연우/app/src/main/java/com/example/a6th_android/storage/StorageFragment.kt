@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.a6th_android.BottomSheetFragment
 import com.example.a6th_android.databinding.FragmentStorageBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -27,6 +28,11 @@ class StorageFragment : Fragment() {
                 tab, position ->
             tab.text = information[position]
         }.attach()
+
+        val bottomSheetFragment = BottomSheetFragment()
+        binding.storageSelectAllTv.setOnClickListener {
+            bottomSheetFragment.show(requireFragmentManager(),"BottomSheetDialog")
+        }
 
         return binding.root
     }

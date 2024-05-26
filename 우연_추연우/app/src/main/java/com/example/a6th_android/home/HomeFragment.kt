@@ -3,6 +3,7 @@ package com.example.a6th_android.home
 import AlbumFragment
 import AlbumRVAdapter
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,12 +18,14 @@ import com.example.a6th_android.banner.BannerVPAdapter
 import com.example.a6th_android.databinding.FragmentHomeBinding
 import com.example.a6th_android.pannel.PannelFragment
 import com.example.a6th_android.pannel.PannelVPAdapter
+import com.example.a6th_android.song.SongDatabase
 import com.google.gson.Gson
 
 class HomeFragment : Fragment() {
 
     lateinit var binding: FragmentHomeBinding
     private var albumDatas = ArrayList<Album>()
+    private lateinit var songDB: SongDatabase
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -31,14 +34,9 @@ class HomeFragment : Fragment() {
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        albumDatas.apply {
-            add(Album("Butter", "방탄소년단 (BTS)", R.drawable.img_album_exp))
-            add(Album("Lilac", "아이유 (IU)", R.drawable.img_album_exp2))
-            add(Album("Next Level", "에스트 (AESPA)", R.drawable.img_album_exp3))
-            add(Album("Moy with LUV", "방탄소년단 (BTS)", R.drawable.img_album_exp4))
-            add(Album("BBoom BBoom", "모모랜드 (MOMOLAND)", R.drawable.img_album_exp5))
-            add(Album("Weekend", "태연 (Tae Yeon)", R.drawable.img_album_exp6))
-        }
+        songDB = SongDatabase.getInstance(requireContext())!!
+        albumDatas.addAll(songDB.albumDao().getAlbums())
+        Log.d("albumlist", albumDatas.toString())
 
         val albumRVAdapter = AlbumRVAdapter(albumDatas)
 
