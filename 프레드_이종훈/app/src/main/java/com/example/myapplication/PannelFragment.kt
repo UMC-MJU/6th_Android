@@ -11,10 +11,10 @@ class PannelFragment(val imgRes : Int) : Fragment() {
 
     lateinit var binding : FragmentPannelBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
+//    override fun onCreate(savedInstanceState: Bundle?) {
+//        super.onCreate(savedInstanceState)
+//
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -7,10 +7,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapplication.databinding.FragmentAlbumBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.gson.Gson
 
 class AlbumFragment : Fragment() {
     lateinit var binding: FragmentAlbumBinding
     private val information = arrayListOf("수록곡", "상세정보", "영상")
+    private var gson: Gson = Gson()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,12 +20,16 @@ class AlbumFragment : Fragment() {
     ): View? {
         binding = FragmentAlbumBinding.inflate(inflater, container, false)
 
-        binding.albumBeenzinoTv.text = arguments?.getString("title")
-        binding.albumMusicSingerTv.text = arguments?.getString("singer")
-        val imageResourceId = arguments?.getInt("album")
-        if (imageResourceId != null) {
-            binding.albumBeenzinoIv.setImageResource(imageResourceId)
-        }
+        val albumJson = arguments?.getString("album")
+        val album = gson.fromJson(albumJson, Album::class.java)
+        setInit(album)
+
+//        binding.albumBeenzinoTv.text = arguments?.getString("title")
+//        binding.albumMusicSingerTv.text = arguments?.getString("singer")
+//        val imageResourceId = arguments?.getInt("album")
+//        if (imageResourceId != null) {
+//            binding.albumBeenzinoIv.setImageResource(imageResourceId)
+//        }
 
 
 
@@ -31,6 +37,8 @@ class AlbumFragment : Fragment() {
             (context as MainActivity).supportFragmentManager.beginTransaction()
                 .replace(R.id.main_frm, HomeFragment()).commitAllowingStateLoss()
         }
+
+
         val albumAdapter = AlbumVPAdapter(this)
         binding.albumContentVp.adapter = albumAdapter
         TabLayoutMediator(binding.albumContentTb, binding.albumContentVp){
@@ -41,6 +49,8 @@ class AlbumFragment : Fragment() {
 
         return binding.root
         //넥서스 4여서 안되는거였다니... 이런
+
+
 
     //       binding.musicListTitle1Tv.setOnClickListener {
         //    //         binding.musicListTitle1Tv.setOnClickListener {
@@ -62,6 +72,12 @@ class AlbumFragment : Fragment() {
     //        binding.musicListTitle5Tv.setOnClickListener {
     //            Toast.makeText(activity, "제목5", Toast.LENGTH_SHORT).show()
     //        }
+    }
+
+    private fun setInit(album: Album){
+        binding.albumBeenzinoIv.setImageResource(album.coverImg!!)
+        binding.albumBeenzinoTv.text = album.title.toString()
+        binding.albumMusicSingerTv.text=album.singer.toString()
     }
 
 
