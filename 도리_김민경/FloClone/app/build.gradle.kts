@@ -44,6 +44,7 @@ android {
 dependencies {
 
     implementation("com.google.android.material:material:1.12.0")
+    implementation("com.google.dagger:dagger:2.48")
 
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("me.relex:circleindicator:2.1.6")
@@ -63,6 +64,7 @@ dependencies {
     // RoomDB
     implementation("androidx.room:room-ktx:2.6.1")
     implementation("androidx.room:room-runtime:2.6.1")
-    kapt("androidx.room:room-compiler:2.6.1")
+//    kapt("androidx.room:room-compiler:2.6.1")
+    kapt("com.google.dagger:dagger-compiler:2.48")
 
 }

@@ -15,7 +15,7 @@ import kotlin.concurrent.timer
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-    lateinit var timer: SongActivity.Timer
+    lateinit var timer: Timer
     lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
 
     private var song: Song = Song()
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
     var nowPos = 0
     lateinit var songDB: SongDatabase
 
-//    val albums = arrayListOf<Album>()
-//    lateinit var albumDB: AlbumDatabase
+    val albums = arrayListOf<Album>()
+    lateinit var albumDB: AlbumDatabase
 
     // 음악 재생을 위한 mediaPlayer
     private var mediaPlayer: MediaPlayer? = null
@@ -39,6 +39,8 @@ class MainActivity : AppCompatActivity() {
 
         inputDummySongs()
         initMiniPlayList()
+
+        inputDummyAlbums()
 
 //        binding.miniPlayerPlayIv.setOnClickListener {
 //            val intent = Intent(this, ForeService::class.java)
@@ -197,11 +199,6 @@ class MainActivity : AppCompatActivity() {
         binding.mainProgressSb.progress = 0
     }
 
-//    private fun inputDummyAlbums() {
-//        val albumDB = AlbumDatabase.getInstance(this)!!
-//        val albums = albumDB.albumDao()
-//    }
-
     // DB에 데이터 없으면 데이터 넣어주기
     private fun inputDummySongs() {
         val songDB = SongDatabase.getInstance(this)!!
@@ -221,7 +218,7 @@ class MainActivity : AppCompatActivity() {
                 "music_iu",
                 R.drawable.img_album_exp2,
                 false,
-
+                1
             )
         )
 
@@ -235,7 +232,7 @@ class MainActivity : AppCompatActivity() {
                 "music_iu",
                 R.drawable.img_album_exp2,
                 false,
-
+                1
                 )
         )
 
@@ -249,6 +246,7 @@ class MainActivity : AppCompatActivity() {
                 "music_ewf",
                 R.drawable.img_boynextdoor_album,
                 false,
+                2
             )
         )
 
@@ -262,6 +260,7 @@ class MainActivity : AppCompatActivity() {
                 "music_ewf",
                 R.drawable.img_boynextdoor_album,
                 false,
+                2
             )
         )
 
@@ -275,6 +274,7 @@ class MainActivity : AppCompatActivity() {
                 "music_popcorn",
                 R.drawable.img_do_album,
                 false,
+                3
             )
         )
 
@@ -288,6 +288,7 @@ class MainActivity : AppCompatActivity() {
                 "music_popcorn",
                 R.drawable.img_do_album,
                 false,
+                3
             )
         )
 
@@ -301,6 +302,7 @@ class MainActivity : AppCompatActivity() {
                 "music_day6",
                 R.drawable.img_day6_album,
                 false,
+                4
             )
         )
 
@@ -314,6 +316,7 @@ class MainActivity : AppCompatActivity() {
                 "music_day6",
                 R.drawable.img_day6_album,
                 false,
+                4
             )
         )
 
@@ -327,6 +330,7 @@ class MainActivity : AppCompatActivity() {
                 "music_armageddon",
                 R.drawable.img_aespa_album,
                 false,
+                5
             )
         )
 
@@ -337,6 +341,117 @@ class MainActivity : AppCompatActivity() {
     private fun initMiniPlayList() {
         songDB = SongDatabase.getInstance(this)!!
         songs.addAll(songDB.songDao().getSongs())
+    }
+
+    private fun initClickListener() {
+        binding.miniPlayerLayout.setOnClickListener {
+            val editor = getSharedPreferences("song", MODE_PRIVATE).edit()
+            editor.putInt("songId", songs[nowPos].id)
+            editor.apply()
+
+            val intent = Intent(this, SongActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.miniPlayerPlayIv.setOnClickListener {
+            setMiniPlayerStatus(true)
+        }
+
+        binding.miniPlayerPauseIv.setOnClickListener {
+            setMiniPlayerStatus(false)
+        }
+
+        binding.miniPlayerNextIv.setOnClickListener {
+            moveSong(+1)
+        }
+
+        binding.miniPlayerPreviousIv.setOnClickListener {
+            moveSong(-1)
+        }
+    }
+
+    private fun initSong() {
+        val spf = getSharedPreferences("song", MODE_PRIVATE)
+        val songId = spf.getInt("songId", 0)
+
+        nowPos = getPlayingSongPosition(songId)
+
+        Log.d("now Song ID", songs[nowPos].id.toString())
+
+        startTimer()
+        setPlayer(songs[nowPos])
+    }
+
+    private fun setPlayer(song: Song) {
+        binding.miniPlayerTitleTv.text = song.title
+        binding.miniPlayerSingerTv.text = song.singer
+        binding.mainProgressSb.progress = if (song.playTime == 0) 0 else (song.second * 1000 / song.playTime)
+
+        val music = resources.getIdentifier(song.music, "raw", this.packageName)
+        mediaPlayer = MediaPlayer.create(this, music)
+
+        setPlayerStatus(song.isPlaying)
+    }
+
+    private fun setPlayerStatus(isPlaying: Boolean) {
+        songs[nowPos].isPlaying = isPlaying
+        timer.isPlaying = isPlaying
+
+        if (isPlaying) {    // 재생중일 경우
+            binding.miniPlayerPlayIv.visibility = View.GONE
+            binding.miniPlayerPauseIv.visibility = View.VISIBLE
+            mediaPlayer?.start()
+        } else {            // 일시정지한 경우
+            binding.miniPlayerPlayIv.visibility = View.VISIBLE
+            binding.miniPlayerPauseIv.visibility = View.GONE
+            // mediaPlayer은 재생 중이 아닐 때 pause를 하면 오류가 발생할 수 있음
+            if (mediaPlayer?.isPlaying == true) {
+                mediaPlayer?.pause()
+            }
+        }
+    }
+
+    private fun startTimer() {
+        timer = Timer(songs[nowPos].playTime, songs[nowPos].isPlaying)
+        timer.start()
+    }
+
+    inner class Timer(private val playTime: Int, var isPlaying: Boolean = true) : Thread() {
+        private var second: Int = 0
+        private var millis: Float = 0f
+
+        override fun run() {
+            super.run()
+            try {
+                while (true) {
+                    if (second >= playTime) {
+                        break
+                    }
+
+                    if (isPlaying) {
+                        sleep(50)
+                        millis += 50
+
+                        runOnUiThread {
+                            binding.mainProgressSb.progress = ((millis / playTime) * 100).toInt()
+                        }
+                    }
+                }
+
+            } catch (e: InterruptedException) {
+                Log.d("Song", "스레드가 죽었습니다. ${e.message}")
+            }
+        }
+    }
+
+    private fun getPlayingSongPosition(songId: Int): Int {
+        for (i in 0 until songs.size) {
+            // songs의 id의 인덱스와 songId가 같을 경우
+            if (songs[i].id == songId) {
+                return i
+            }
+        }
+        return 0
     }
 
     private fun moveSong(direct: Int) {
@@ -356,50 +471,55 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    private fun inputDummyAlbums() {
-//        val albumDB = AlbumDatabase.getInstance(this)!!
-//        val albums = albumDB.albumDao().getAlbums()
-//
-//        if (albums.isNotEmpty()) return
-//
-//        albumDB.albumDao().insert(
-//            Album(
-//                "IU 5th Album 'LILAC'",
-//                "아이유 (IU)",
-//                R.drawable.img_album_exp2,
-//            )
-//        )
-//
-//        albumDB.albumDao().insert(
-//            Album(
-//                "How?",
-//                "BOYNEXTDOOR",
-//                R.drawable.img_boynextdoor_album,
-//            )
-//        )
-//
-//        albumDB.albumDao().insert(
-//            Album(
-//                "성장",
-//                "D.O.",
-//                R.drawable.img_do_album,
-//            )
-//        )
-//
-//        albumDB.albumDao().insert(
-//            Album(
-//                "Fourever",
-//                "데이식스 (Day6)",
-//                R.drawable.img_day6_album,
-//            )
-//        )
-//
-//        albumDB.albumDao().insert(
-//            Album(
-//                "Armageddon",
-//                "에스파 (aespa)",
-//                R.drawable.img_aespa_album,
-//            )
-//        )
-//    }
+    private fun inputDummyAlbums() {
+        albumDB = AlbumDatabase.getInstance(this)!!
+        val albums = albumDB.albumDao().getAlbums()
+
+        if (albums.isNotEmpty()) return
+
+        albumDB.albumDao().insert(
+            Album(
+                1,
+                "IU 5th Album 'LILAC'",
+                "아이유 (IU)",
+                R.drawable.img_album_exp2,
+            )
+        )
+
+        albumDB.albumDao().insert(
+            Album(
+                2,
+                "How?",
+                "BOYNEXTDOOR",
+                R.drawable.img_boynextdoor_album,
+            )
+        )
+
+        albumDB.albumDao().insert(
+            Album(
+                3,
+                "성장",
+                "D.O.",
+                R.drawable.img_do_album,
+            )
+        )
+
+        albumDB.albumDao().insert(
+            Album(
+                4,
+                "Fourever",
+                "데이식스 (Day6)",
+                R.drawable.img_day6_album,
+            )
+        )
+
+        albumDB.albumDao().insert(
+            Album(
+                5,
+                "Armageddon",
+                "에스파 (aespa)",
+                R.drawable.img_aespa_album,
+            )
+        )
+    }
 }
