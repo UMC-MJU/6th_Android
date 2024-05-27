@@ -3033,6 +3033,11 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_editbar_addplaylist
+drawable btn_editbar_delete
+drawable btn_editbar_download
+drawable btn_editbar_mylist
+drawable btn_editbar_play
 drawable btn_input_password
 drawable btn_input_password_off
 drawable btn_main_arrow_more
@@ -3579,7 +3584,6 @@ id locker_select_all_img_iv
 id locker_select_all_tv
 id locker_title_tv
 id lookFragment
-id lower_ib
 id lyrics_01_iv
 id m3_side_sheet
 id mainMiniplayerSingerTv
@@ -3649,7 +3653,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id music_title_tv
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3701,7 +3704,6 @@ id pathRelative
 id peekHeight
 id percent
 id pin
-id player_like_iv
 id player_like_iv_layout
 id player_unlike_iv
 id plus_ib
@@ -3755,7 +3757,6 @@ id showCustom
 id showHome
 id showTitle
 id sin
-id singer_name_tv
 id skipCollapsed
 id skipped
 id slide
@@ -3763,16 +3764,18 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
-id song_album_IU_iv
+id song_album_iv
 id song_all_listen_iv
 id song_all_listen_tv
 id song_all_select_iv
 id song_all_select_tv
 id song_celebrity_layout
 id song_coin_layout
+id song_down_ib
 id song_end_time_tv
 id song_flu_layout
 id song_lalac_layout
+id song_like_iv
 id song_list_order_01_tv
 id song_list_order_02_tv
 id song_list_order_03_tv
@@ -3800,6 +3803,7 @@ id song_music_title_03_tv
 id song_music_title_04_tv
 id song_music_title_05_tv
 id song_music_title_06_tv
+id song_music_title_tv
 id song_next_iv
 id song_pause_iv
 id song_play_01_iv
@@ -3819,6 +3823,7 @@ id song_singer_name_03_tv
 id song_singer_name_04_tv
 id song_singer_name_05_tv
 id song_singer_name_06_tv
+id song_singer_name_tv
 id song_singer_plus_iv
 id song_spring_layout
 id song_start_time_tv
@@ -3846,6 +3851,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id switchRV
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -4146,7 +4152,17 @@ menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw music_bboom
+raw music_boy
+raw music_butter
+raw music_flu
+raw music_fool
 raw music_lilac
+raw music_lovedive
+raw music_mylove
+raw music_nakka
+raw music_next
+raw music_nextlevel
 string _2012_07_03
 string abc_action_bar_home_description
 string abc_action_bar_up_description

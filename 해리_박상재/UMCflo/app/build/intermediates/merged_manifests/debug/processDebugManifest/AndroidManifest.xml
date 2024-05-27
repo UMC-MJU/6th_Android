@@ -39,6 +39,11 @@
         </activity>
         <activity android:name="com.example.umcflo.SongActivity" />
 
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.umcflo.androidx-startup"

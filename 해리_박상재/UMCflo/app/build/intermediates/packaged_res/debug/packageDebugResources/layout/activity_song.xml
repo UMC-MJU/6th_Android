@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="@+id/setting_ib" />
 
     <ImageButton
-        android:id="@+id/lower_ib"
+        android:id="@+id/song_down_ib"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginEnd="15dp"
@@ -49,12 +49,12 @@
         android:background="@color/white"
         android:scaleType="fitXY"
         android:src="@drawable/btn_player_more"
-        app:layout_constraintEnd_toEndOf="@+id/lower_ib"
-        app:layout_constraintStart_toStartOf="@+id/lower_ib"
-        app:layout_constraintTop_toBottomOf="@+id/lower_ib" />
+        app:layout_constraintEnd_toEndOf="@+id/song_down_ib"
+        app:layout_constraintStart_toStartOf="@+id/song_down_ib"
+        app:layout_constraintTop_toBottomOf="@+id/song_down_ib" />
 
     <TextView
-        android:id="@+id/music_title_tv"
+        android:id="@+id/song_music_title_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LILAC"
@@ -66,16 +66,16 @@
         app:layout_constraintTop_toBottomOf="@id/plus_ib" />
 
     <TextView
-        android:id="@+id/singer_name_tv"
+        android:id="@+id/song_singer_name_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="아이유(IU)"
         android:textColor="@color/black"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/music_title_tv"
-        app:layout_constraintStart_toStartOf="@+id/music_title_tv"
-        app:layout_constraintTop_toBottomOf="@+id/music_title_tv" />
+        app:layout_constraintEnd_toEndOf="@+id/song_music_title_tv"
+        app:layout_constraintStart_toStartOf="@+id/song_music_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/song_music_title_tv" />
 
 
     <ImageView
@@ -83,12 +83,12 @@
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:src="@drawable/btn_main_arrow_more"
-        app:layout_constraintBottom_toBottomOf="@+id/singer_name_tv"
-        app:layout_constraintStart_toEndOf="@+id/singer_name_tv"
-        app:layout_constraintTop_toTopOf="@+id/singer_name_tv" />
+        app:layout_constraintBottom_toBottomOf="@+id/song_singer_name_tv"
+        app:layout_constraintStart_toEndOf="@+id/song_singer_name_tv"
+        app:layout_constraintTop_toTopOf="@+id/song_singer_name_tv" />
 
     <ImageView
-        android:id="@+id/song_album_IU_iv"
+        android:id="@+id/song_album_iv"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="20dp"
@@ -106,9 +106,9 @@
         android:layout_marginTop="20dp"
         android:text="우리 둘의 마지막 페이지를 잘 부탁해"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@+id/song_album_IU_iv"
-        app:layout_constraintStart_toStartOf="@+id/song_album_IU_iv"
-        app:layout_constraintTop_toBottomOf="@+id/song_album_IU_iv" />
+        app:layout_constraintEnd_toEndOf="@+id/song_album_iv"
+        app:layout_constraintStart_toStartOf="@+id/song_album_iv"
+        app:layout_constraintTop_toBottomOf="@+id/song_album_iv" />
 
     <TextView
         android:id="@+id/song_music_lyrics_02_iv"
@@ -126,12 +126,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@id/song_album_IU_iv"
-        app:layout_constraintStart_toStartOf="@id/song_album_IU_iv"
+        app:layout_constraintEnd_toEndOf="@id/song_album_iv"
+        app:layout_constraintStart_toStartOf="@id/song_album_iv"
         app:layout_constraintTop_toBottomOf="@id/song_music_lyrics_02_iv">
 
         <ImageView
-            android:id="@+id/player_like_iv"
+            android:id="@+id/song_like_iv"
             android:layout_width="33dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_my_like_off">

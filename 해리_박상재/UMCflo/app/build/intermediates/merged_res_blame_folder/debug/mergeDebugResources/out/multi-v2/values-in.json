@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.umcflo.app-mergeDebugResources-30:/values-in/values-in.xml",
+            "outputFile": "com.example.umcflo.app-mergeDebugResources-33:/values-in/values-in.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sangj\\.gradle\\caches\\transforms-3\\512dd553433fed0a183acc4f624d5ec9\\transformed\\core-1.13.1\\res\\values-in\\values-in.xml",

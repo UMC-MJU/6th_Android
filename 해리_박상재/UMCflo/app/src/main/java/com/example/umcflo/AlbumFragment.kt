@@ -43,7 +43,7 @@ class AlbumFragment : Fragment() {
     }
 
     private fun setInit(album : Album) {
-        binding.albumAlbumIv.setImageResource(album.coverImage!!)
+        binding.albumAlbumIv.setImageResource(album.coverImg!!)
         binding.albumMusicTitleTv.text = album.title.toString()
         binding.albumSingerNameTv.text = album.singer.toString()
     }

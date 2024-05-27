@@ -5,6 +5,7 @@ INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidMa
 INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.databinding:viewbinding:8.3.0] C:\Users\sangj\.gradle\caches\transforms-3\d0cc2ba07cc1a51ca5e66f2701b86679\transformed\viewbinding-8.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\sangj\.gradle\caches\transforms-3\8c6e71333fe2aed7ac5ef9137e285269\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sangj\.gradle\caches\transforms-3\ddf324b6a45754fc446fc6eab33ec636\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\sangj\.gradle\caches\transforms-3\e0b36974138b4f555dc681ab61bd7cef\transformed\appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
@@ -35,6 +36,9 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.2] C:\Users\sangj\.g
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] C:\Users\sangj\.gradle\caches\transforms-3\45617d0db468f8d53a3937da11d742dd\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\sangj\.gradle\caches\transforms-3\bfecaebf84eb07da35698e85c53e0473\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\sangj\.gradle\caches\transforms-3\fa12240bf32b116bab2be3fd2087a5f7\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\sangj\.gradle\caches\transforms-3\fb953d4e36c118eb086d73b35b68b69a\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\sangj\.gradle\caches\transforms-3\9bfec0c6661302fba0b1ec4a95ff58d8\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\sangj\.gradle\caches\transforms-3\76aa7fb7878c5ba2b61daf425809b90f\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\a25d4778bdd238569299217859e2c611\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\44f2e44cbbbd3053723086f6aa1a7560\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\sangj\.gradle\caches\transforms-3\0a1c478fb24ed85ca546b541adb89d8b\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
@@ -42,7 +46,6 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\sangj\.gradle\cach
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\d2034e131b8bae6b9ba530e5c79a500b\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\583c3d9eeaed8bf280fdc01cd78d45e6\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sangj\.gradle\caches\transforms-3\1d166331551c4fd0df57d080d76b38de\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\sangj\.gradle\caches\transforms-3\fb953d4e36c118eb086d73b35b68b69a\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\a817e83e39df36bfbaf9b5fb2cd56240\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\c17d96c23a9a75bfc2cbbd51435e2b8c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\6962bae23e2af9a19e63c59df9040255\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -60,6 +63,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\sangj\.
 application
 ADDED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml:5:5-30:19
 INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml:5:5-30:19
+MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:23:5-29:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\sangj\.gradle\caches\transforms-3\8c6e71333fe2aed7ac5ef9137e285269\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\sangj\.gradle\caches\transforms-3\8c6e71333fe2aed7ac5ef9137e285269\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sangj\.gradle\caches\transforms-3\ddf324b6a45754fc446fc6eab33ec636\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -126,6 +131,8 @@ INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidMa
 INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.3.0] C:\Users\sangj\.gradle\caches\transforms-3\d0cc2ba07cc1a51ca5e66f2701b86679\transformed\viewbinding-8.3.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.3.0] C:\Users\sangj\.gradle\caches\transforms-3\d0cc2ba07cc1a51ca5e66f2701b86679\transformed\viewbinding-8.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\sangj\.gradle\caches\transforms-3\8c6e71333fe2aed7ac5ef9137e285269\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\sangj\.gradle\caches\transforms-3\8c6e71333fe2aed7ac5ef9137e285269\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\sangj\.gradle\caches\transforms-3\ddf324b6a45754fc446fc6eab33ec636\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
@@ -186,6 +193,12 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\s
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] C:\Users\sangj\.gradle\caches\transforms-3\bfecaebf84eb07da35698e85c53e0473\transformed\lifecycle-viewmodel-savedstate-2.6.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\sangj\.gradle\caches\transforms-3\fa12240bf32b116bab2be3fd2087a5f7\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\sangj\.gradle\caches\transforms-3\fa12240bf32b116bab2be3fd2087a5f7\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\sangj\.gradle\caches\transforms-3\fb953d4e36c118eb086d73b35b68b69a\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\sangj\.gradle\caches\transforms-3\fb953d4e36c118eb086d73b35b68b69a\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\sangj\.gradle\caches\transforms-3\9bfec0c6661302fba0b1ec4a95ff58d8\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\sangj\.gradle\caches\transforms-3\9bfec0c6661302fba0b1ec4a95ff58d8\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\sangj\.gradle\caches\transforms-3\76aa7fb7878c5ba2b61daf425809b90f\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\sangj\.gradle\caches\transforms-3\76aa7fb7878c5ba2b61daf425809b90f\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\a25d4778bdd238569299217859e2c611\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\a25d4778bdd238569299217859e2c611\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\44f2e44cbbbd3053723086f6aa1a7560\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
@@ -200,8 +213,6 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\sangj\.gradle\ca
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\583c3d9eeaed8bf280fdc01cd78d45e6\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sangj\.gradle\caches\transforms-3\1d166331551c4fd0df57d080d76b38de\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sangj\.gradle\caches\transforms-3\1d166331551c4fd0df57d080d76b38de\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\sangj\.gradle\caches\transforms-3\fb953d4e36c118eb086d73b35b68b69a\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\sangj\.gradle\caches\transforms-3\fb953d4e36c118eb086d73b35b68b69a\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\a817e83e39df36bfbaf9b5fb2cd56240\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\a817e83e39df36bfbaf9b5fb2cd56240\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\sangj\.gradle\caches\transforms-3\c17d96c23a9a75bfc2cbbd51435e2b8c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
@@ -214,6 +225,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\sangj\.
 		INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\sangj\AndroidStudioProjects\UMCflo\app\src\main\AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.6.0] C:\Users\sangj\.gradle\caches\transforms-3\1b46a300e946dd3426a8f4ebf9281eed\transformed\room-runtime-2.6.0\AndroidManifest.xml:25:13-74
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\sangj\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\sangj\.gradle\caches\transforms-3\1b60d9b1479e1620ea7a73a3e70cb116\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20

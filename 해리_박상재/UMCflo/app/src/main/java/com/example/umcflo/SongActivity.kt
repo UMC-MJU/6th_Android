@@ -1,201 +1,230 @@
 package com.example.umcflo
 
-import android.content.Intent
-import android.media.AsyncPlayer
-import android.media.Image
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.umcflo.databinding.ActivitySongBinding
 import com.google.gson.Gson
 
 class SongActivity : AppCompatActivity() {
 
+    //전역 변수
     lateinit var binding : ActivitySongBinding
-    lateinit var song: Song
-    //전역변수로 스레드 하나를 생성하고 아래에 송객체를 초기화하며 타이머 객채를 생성
     lateinit var timer: Timer
-    //미디어파일 재생 ?뜻은 null값이 들어올 수도 있다는 의미(해제용)
-    private  var mediaPlayer: MediaPlayer? = null
-    private  var gson: Gson = Gson()
+    private var mediaPlayer: MediaPlayer? = null
+    private var gson: Gson = Gson()
+
+    val songs = arrayListOf<Song>()
+    lateinit var songDB: SongDatabase
+    var nowPos = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySongBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initPlayList()
         initSong()
-        setPlayer(song)
+        initClickListener()
 
-//        var title : String? = null
-//        var singer : String? = null
-//
-//
-//        if (intent.hasExtra("title") && intent.hasExtra("singer")) {
-////            title = intent.getStringExtra("title")
-////            singer = intent.getStringExtra("singer")
-////            binding.musicTitleTv.text = title
-////            binding.singerNameTv.text = singer
-//            binding.musicTitleTv.text = intent.getStringExtra("title")!!
-//            binding.singerNameTv.text = intent.getStringExtra("singer")!!
-//
-//        }
-
-        binding.lowerIb.setOnClickListener{
-//            val intent = Intent(this, MainActivity::class.java)
-//            intent.putExtra("message", title + " _ " + singer)
-//            setResult(RESULT_OK, intent)
-            finish()
-        }
-
-        binding.songMiniplayerIv.setOnClickListener{
-            setPlayerStatus(true)
-        }
-        binding.songPauseIv.setOnClickListener {
-            setPlayerStatus(false)
-        }
-
-        //진한색의 drawable이 없음 다운받아야함
-//        binding.playerRepeatInactiveIv.setOnClickListener {
-//            setRepeatStatus(true)
-//        }
-//
-//        binding.playerRepeatActiveIv.setOnClickListener {
-//            setRepeatStatus(false)
-//        }
 
     }
 
+    override fun onPause() {
+        super.onPause()
 
-    private  fun initSong(){
-        if(intent.hasExtra("title") && intent.hasExtra("singer")){
-            song = Song(
-                intent.getStringExtra("title")!! ,
-                intent.getStringExtra("singer")!!,
-                intent.getIntExtra("second", 0),
-                intent.getIntExtra("playTime", 0),
-                intent.getBooleanExtra("isPlaying", false),
-                intent.getStringExtra("music")!!
-            )
-        }
-        startTimer()
-    }
 
-    private fun setPlayer(song: Song){
-        binding.musicTitleTv.text = intent.getStringExtra("title")!!
-        binding.singerNameTv.text = intent.getStringExtra("singer")!!
-        binding.songStartTimeTv.text = String.format("%02d:%02d", song.second / 60, song.second%60)
-        binding.songEndTimeTv.text = String.format("%02d:%02d", song.playTime / 60, song.playTime%60)
-        binding.songProgressSb.progress = if (song.playTime == 0) 0 else (song.second * 1000 / song.playTime)
-        //리소스 파일에서 해당 스트링 값으로 파일로 받아오기 위함
-        val music = resources.getIdentifier(song.music, "raw", this.packageName)
-        mediaPlayer = MediaPlayer.create(this, music)
+        songs[nowPos].second = ((binding.songProgressSb.progress * songs[nowPos].playTime)/100)/1000
+        songs[nowPos].isPlaying = false
+        setPlayerStatus(false)
 
-        setPlayerStatus(song.isPlaying)
-    }
+        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
+        val editor = sharedPreferences.edit() // 에디터
 
-    fun setPlayerStatus(isPlaying : Boolean){
-        song.isPlaying = isPlaying
-        timer.isPlaying = isPlaying
+        editor.putInt("songId",songs[nowPos].id)
 
-        if(isPlaying){
-            binding.songPauseIv.visibility = View.VISIBLE
-            binding.songMiniplayerIv.visibility = View.GONE
-            mediaPlayer?.start()
-        }
-        else{
-            binding.songMiniplayerIv.visibility = View.VISIBLE
-            binding.songPauseIv.visibility = View.GONE
-            if(mediaPlayer?.isPlaying == true){ //미디어플레이가 재생중이 아닐때 오류발생 방지
-                mediaPlayer?.pause()
-            }
-        }
-    }
-
-//    private fun setRepeatStatus(isRepeat: Boolean) {
-//        if (isRepeat) {     // 전체 반복이 아닐 경우
-//            binding.playerRepeatInactiveIv.visibility = View.GONE
-//            binding.playerRepeatActiveIv.visibility = View.VISIBLE
-//        } else {    // 전체 반복일 경우
-//            binding.playerRepeatInactiveIv.visibility = View.VISIBLE
-//            binding.playerRepeatActiveIv.visibility = View.GONE
-//        }
-//    }
-    
-    private fun  startTimer(){
-        timer = Timer(song.playTime, song.isPlaying)
-        timer.start()
+        editor.apply()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         timer.interrupt()
-        mediaPlayer?.release() // 미디어 플레이어가 갖고있던 리소스 해제
-        mediaPlayer = null // 미디어 플레이어 해제
+        mediaPlayer?.release()
+        mediaPlayer = null
+    }
+
+    private fun initPlayList(){
+        songDB = SongDatabase.getInstance(this)!!
+        songs.addAll(songDB.songDao().getSongs())
+    }
+
+    private fun initClickListener(){
+        binding.songDownIb.setOnClickListener {
+            finish()
+        }
+
+        binding.songMiniplayerIv.setOnClickListener {
+            setPlayerStatus(true)
+        }
+
+        binding.songPauseIv.setOnClickListener {
+            setPlayerStatus(false)
+        }
+
+        binding.songNextIv.setOnClickListener {
+            moveSong(+1)
+        }
+
+        binding.songPreviousIv.setOnClickListener {
+            moveSong(-1)
+        }
+
+        binding.songLikeIv.setOnClickListener {
+            setLike(songs[nowPos].isLike)
+        }
+    }
+
+    private fun initSong(){
+        val spf = getSharedPreferences("song", MODE_PRIVATE)
+        val songId = spf.getInt("songId",0)
+
+        nowPos = getPlayingSongPosition(songId)
+
+        Log.d("now Song ID",songs[nowPos].id.toString())
+
+        startTimer()
+        setPlayer(songs[nowPos])
+    }
+
+    private fun setLike(isLike: Boolean){
+        songs[nowPos].isLike = !isLike
+        songDB.songDao().updateIsLikeById(!isLike,songs[nowPos].id)
+
+        if (!isLike){
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_on)
+        } else{
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_off)
+        }
+
+    }
+
+    private fun moveSong(direct: Int){
+        if (nowPos + direct < 0){
+            Toast.makeText(this,"first song",Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        if (nowPos + direct >= songs.size){
+            Toast.makeText(this,"last song",Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        nowPos += direct
+
+        timer.interrupt()
+        startTimer()
+
+        mediaPlayer?.release()
+        mediaPlayer = null
+
+        setPlayer(songs[nowPos])
+    }
+
+    private fun getPlayingSongPosition(songId: Int): Int{
+        for (i in 0 until songs.size){
+            if (songs[i].id == songId){
+                return i
+            }
+        }
+        return 0
+    }
+
+
+    private fun setPlayer(song: Song){
+        binding.songMusicTitleTv.text = song.title
+        binding.songSingerNameTv.text = song.singer
+        binding.songStartTimeTv.text = String.format("%02d:%02d",song.second / 60, song.second % 60)
+        binding.songEndTimeTv.text = String.format("%02d:%02d",song.playTime / 60, song.playTime % 60)
+        binding.songAlbumIv.setImageResource(song.coverImg!!)
+        binding.songProgressSb.progress = (song.second * 1000 / song.playTime)
+
+        val music = resources.getIdentifier(song.music, "raw", this.packageName)
+        mediaPlayer = MediaPlayer.create(this, music)
+
+        if (song.isLike){
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_on)
+        } else{
+            binding.songLikeIv.setImageResource(R.drawable.ic_my_like_off)
+        }
+
+        setPlayerStatus(song.isPlaying)
 
     }
 
 
-    inner class Timer(private val playTime: Int, var isPlaying: Boolean = true) : Thread() {
+    private fun setPlayerStatus (isPlaying : Boolean){
+        songs[nowPos].isPlaying = isPlaying
+        timer.isPlaying = isPlaying
+
+        if(isPlaying){
+            binding.songMiniplayerIv.visibility = View.GONE
+            binding.songPauseIv.visibility = View.VISIBLE
+            mediaPlayer?.start()
+        } else {
+            binding.songMiniplayerIv.visibility = View.VISIBLE
+            binding.songPauseIv.visibility = View.GONE
+            if(mediaPlayer?.isPlaying == true){
+                mediaPlayer?.pause()
+            }
+        }
+
+    }
+
+    private fun startTimer(){
+        timer = Timer(songs[nowPos].playTime,songs[nowPos].isPlaying)
+        timer.start()
+    }
+
+    inner class Timer(private val playTime: Int,var isPlaying: Boolean = true):Thread(){
+
         private var second : Int = 0
-        private var mills : Float = 0F
+        private var mills: Float = 0f
 
         override fun run() {
             super.run()
-
             try {
-                while(true) {
-                    if(second >= playTime) {
+                while (true){
+
+                    if (second >= playTime){
                         break
                     }
 
-                    while (!isPlaying) {
-                        sleep(200) // 0.2초 대기
-                    }
-
-                    if(isPlaying) {
+                    if (isPlaying){
                         sleep(50)
                         mills += 50
 
                         runOnUiThread {
-                            // binding.songProgressSb.progress = ((mills/playTime*1000) * 100).toInt()
-                            binding.songProgressSb.progress = ((mills/playTime) * 100).toInt()
+                            binding.songProgressSb.progress = ((mills / playTime)*100).toInt()
                         }
 
-                        if(mills % 1000 == 0F) { // 1초
+                        if (mills % 1000 == 0f){
                             runOnUiThread {
-                                binding.songStartTimeTv.text = String.format("%02d:%02d", second / 60, second % 60)
+                                binding.songStartTimeTv.text = String.format("%02d:%02d",second / 60, second % 60)
                             }
                             second++
                         }
-                    }
-                }
-            } catch (e: InterruptedException) {
-                Log.d("SongActivity", "Thread Terminates! ${e.message}")
-            }
-        }
-    }
-    //사용자가 포커스를 잃었을때 음악이 중지
-    override fun onPause() {
-        super.onPause()
-        setPlayerStatus(false)
-        //저장된 시간부터 시작
-        song.second = ((binding.songProgressSb.progress * song.playTime)/100)/1000
-        //어플 종료후에도 저장된 데이터를 사용하기위함(간단한데이터)
-        val sharedPreferences = getSharedPreferences("song", MODE_PRIVATE)
-        val editor = sharedPreferences.edit() //에디터
 
-//        editor.putString("title", song.title)
-//        editor.putString("title", song.singer)
-    // -> json(데이터 표현 표준)을 이용해 한번에 보냄
-        //Gson:  자바객체<->Json
-        val songJson = gson.toJson(song)
-        editor.putString("songData", songJson)
-        editor.apply() //실제저장공간에 저장
+                    }
+
+                }
+
+            }catch (e: InterruptedException){
+                Log.d("Song","쓰레드가 죽었습니다. ${e.message}")
+            }
+
+        }
     }
 }

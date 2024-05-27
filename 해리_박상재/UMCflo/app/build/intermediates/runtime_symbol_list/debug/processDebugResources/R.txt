@@ -3032,6 +3032,11 @@ int drawable btn_checkbox_checked_mtrl 0x7f070086
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f070087
 int drawable btn_checkbox_unchecked_mtrl 0x7f070088
 int drawable btn_checkbox_unchecked_to_checked_mtrl_animation 0x7f070089
+int drawable btn_editbar_addplaylist 0x7f07015e
+int drawable btn_editbar_delete 0x7f07015f
+int drawable btn_editbar_download 0x7f070160
+int drawable btn_editbar_mylist 0x7f070161
+int drawable btn_editbar_play 0x7f070162
 int drawable btn_input_password 0x7f07008a
 int drawable btn_input_password_off 0x7f07008b
 int drawable btn_main_arrow_more 0x7f07008c
@@ -3578,7 +3583,6 @@ int id locker_select_all_img_iv 0x7f0802b5
 int id locker_select_all_tv 0x7f0802b6
 int id locker_title_tv 0x7f080148
 int id lookFragment 0x7f080149
-int id lower_ib 0x7f08014a
 int id lyrics_01_iv 0x7f08014b
 int id m3_side_sheet 0x7f08014c
 int id mainMiniplayerSingerTv 0x7f0802aa
@@ -3648,7 +3652,6 @@ int id mtrl_picker_text_input_range_start 0x7f08018b
 int id mtrl_picker_title_text 0x7f08018c
 int id mtrl_view_tag_bottom_padding 0x7f08018d
 int id multiply 0x7f08018e
-int id music_title_tv 0x7f08018f
 int id navigation_bar_item_active_indicator_view 0x7f080190
 int id navigation_bar_item_icon_container 0x7f080191
 int id navigation_bar_item_icon_view 0x7f080192
@@ -3700,7 +3703,6 @@ int id pathRelative 0x7f0801bf
 int id peekHeight 0x7f0801c0
 int id percent 0x7f0801c1
 int id pin 0x7f0801c2
-int id player_like_iv 0x7f0801c3
 int id player_like_iv_layout 0x7f0801c4
 int id player_unlike_iv 0x7f0801c5
 int id plus_ib 0x7f0801c6
@@ -3754,7 +3756,6 @@ int id showCustom 0x7f0801f5
 int id showHome 0x7f0801f6
 int id showTitle 0x7f0801f7
 int id sin 0x7f0801f8
-int id singer_name_tv 0x7f0801f9
 int id skipCollapsed 0x7f0801fa
 int id skipped 0x7f0801fb
 int id slide 0x7f0801fc
@@ -3762,16 +3763,18 @@ int id snackbar_action 0x7f0801fd
 int id snackbar_text 0x7f0801fe
 int id snap 0x7f0801ff
 int id snapMargins 0x7f080200
-int id song_album_IU_iv 0x7f080201
+int id song_album_iv 0x7f0802bd
 int id song_all_listen_iv 0x7f080202
 int id song_all_listen_tv 0x7f080203
 int id song_all_select_iv 0x7f080204
 int id song_all_select_tv 0x7f080205
 int id song_celebrity_layout 0x7f080206
 int id song_coin_layout 0x7f080207
+int id song_down_ib 0x7f0802be
 int id song_end_time_tv 0x7f080208
 int id song_flu_layout 0x7f080209
 int id song_lalac_layout 0x7f08020a
+int id song_like_iv 0x7f0802c1
 int id song_list_order_01_tv 0x7f08020b
 int id song_list_order_02_tv 0x7f08020c
 int id song_list_order_03_tv 0x7f08020d
@@ -3799,6 +3802,7 @@ int id song_music_title_03_tv 0x7f080222
 int id song_music_title_04_tv 0x7f080223
 int id song_music_title_05_tv 0x7f080224
 int id song_music_title_06_tv 0x7f080225
+int id song_music_title_tv 0x7f0802bf
 int id song_next_iv 0x7f080226
 int id song_pause_iv 0x7f080227
 int id song_play_01_iv 0x7f080228
@@ -3818,6 +3822,7 @@ int id song_singer_name_03_tv 0x7f080235
 int id song_singer_name_04_tv 0x7f080236
 int id song_singer_name_05_tv 0x7f080237
 int id song_singer_name_06_tv 0x7f080238
+int id song_singer_name_tv 0x7f0802c0
 int id song_singer_plus_iv 0x7f080239
 int id song_spring_layout 0x7f08023a
 int id song_start_time_tv 0x7f08023b
@@ -3845,6 +3850,7 @@ int id stretch 0x7f080250
 int id submenuarrow 0x7f080251
 int id submit_area 0x7f080252
 int id supportScrollUp 0x7f080253
+int id switchRV 0x7f0802c2
 int id tabMode 0x7f080254
 int id tag_accessibility_actions 0x7f080255
 int id tag_accessibility_clickable_spans 0x7f080256
@@ -4145,7 +4151,17 @@ int menu bottom_nav_menu 0x7f0d0000
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
+int raw music_bboom 0x7f140006
+int raw music_boy 0x7f140007
+int raw music_butter 0x7f140008
+int raw music_flu 0x7f140009
+int raw music_fool 0x7f140001
 int raw music_lilac 0x7f140000
+int raw music_lovedive 0x7f140002
+int raw music_mylove 0x7f140003
+int raw music_nakka 0x7f140004
+int raw music_next 0x7f14000a
+int raw music_nextlevel 0x7f140005
 int string _2012_07_03 0x7f100000
 int string abc_action_bar_home_description 0x7f100001
 int string abc_action_bar_up_description 0x7f100002

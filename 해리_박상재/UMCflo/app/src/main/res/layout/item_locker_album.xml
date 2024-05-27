@@ -38,6 +38,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
+        android:id="@+id/switchRV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_toggle_off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_locker_album_play_img_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
         android:id="@+id/item_locker_album_play_img_iv"
         android:layout_width="40dp"
         android:layout_height="40dp"

@@ -33,16 +33,7 @@ public final class ActivitySongBinding implements ViewBinding {
   public final ImageView listIv;
 
   @NonNull
-  public final ImageButton lowerIb;
-
-  @NonNull
   public final TextView lyrics01Iv;
-
-  @NonNull
-  public final TextView musicTitleTv;
-
-  @NonNull
-  public final ImageView playerLikeIv;
 
   @NonNull
   public final LinearLayout playerLikeIvLayout;
@@ -63,19 +54,25 @@ public final class ActivitySongBinding implements ViewBinding {
   public final ImageButton settingIb;
 
   @NonNull
-  public final TextView singerNameTv;
+  public final ImageView songAlbumIv;
 
   @NonNull
-  public final ImageView songAlbumIUIv;
+  public final ImageButton songDownIb;
 
   @NonNull
   public final TextView songEndTimeTv;
+
+  @NonNull
+  public final ImageView songLikeIv;
 
   @NonNull
   public final ImageView songMiniplayerIv;
 
   @NonNull
   public final TextView songMusicLyrics02Iv;
+
+  @NonNull
+  public final TextView songMusicTitleTv;
 
   @NonNull
   public final ImageView songNextIv;
@@ -96,48 +93,52 @@ public final class ActivitySongBinding implements ViewBinding {
   public final ImageView songRepeatIv;
 
   @NonNull
+  public final TextView songSingerNameTv;
+
+  @NonNull
   public final ImageView songSingerPlusIv;
 
   @NonNull
   public final TextView songStartTimeTv;
 
   private ActivitySongBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton eqIb,
-      @NonNull ImageView instagramIv, @NonNull ImageView listIv, @NonNull ImageButton lowerIb,
-      @NonNull TextView lyrics01Iv, @NonNull TextView musicTitleTv, @NonNull ImageView playerLikeIv,
+      @NonNull ImageView instagramIv, @NonNull ImageView listIv, @NonNull TextView lyrics01Iv,
       @NonNull LinearLayout playerLikeIvLayout, @NonNull ImageView playerUnlikeIv,
       @NonNull ImageButton plusIb, @NonNull ImageView randomIv, @NonNull ImageView relatedIv,
-      @NonNull ImageButton settingIb, @NonNull TextView singerNameTv,
-      @NonNull ImageView songAlbumIUIv, @NonNull TextView songEndTimeTv,
-      @NonNull ImageView songMiniplayerIv, @NonNull TextView songMusicLyrics02Iv,
+      @NonNull ImageButton settingIb, @NonNull ImageView songAlbumIv,
+      @NonNull ImageButton songDownIb, @NonNull TextView songEndTimeTv,
+      @NonNull ImageView songLikeIv, @NonNull ImageView songMiniplayerIv,
+      @NonNull TextView songMusicLyrics02Iv, @NonNull TextView songMusicTitleTv,
       @NonNull ImageView songNextIv, @NonNull ImageView songPauseIv,
       @NonNull LinearLayout songPlayerLayout, @NonNull ImageView songPreviousIv,
       @NonNull SeekBar songProgressSb, @NonNull ImageView songRepeatIv,
-      @NonNull ImageView songSingerPlusIv, @NonNull TextView songStartTimeTv) {
+      @NonNull TextView songSingerNameTv, @NonNull ImageView songSingerPlusIv,
+      @NonNull TextView songStartTimeTv) {
     this.rootView = rootView;
     this.eqIb = eqIb;
     this.instagramIv = instagramIv;
     this.listIv = listIv;
-    this.lowerIb = lowerIb;
     this.lyrics01Iv = lyrics01Iv;
-    this.musicTitleTv = musicTitleTv;
-    this.playerLikeIv = playerLikeIv;
     this.playerLikeIvLayout = playerLikeIvLayout;
     this.playerUnlikeIv = playerUnlikeIv;
     this.plusIb = plusIb;
     this.randomIv = randomIv;
     this.relatedIv = relatedIv;
     this.settingIb = settingIb;
-    this.singerNameTv = singerNameTv;
-    this.songAlbumIUIv = songAlbumIUIv;
+    this.songAlbumIv = songAlbumIv;
+    this.songDownIb = songDownIb;
     this.songEndTimeTv = songEndTimeTv;
+    this.songLikeIv = songLikeIv;
     this.songMiniplayerIv = songMiniplayerIv;
     this.songMusicLyrics02Iv = songMusicLyrics02Iv;
+    this.songMusicTitleTv = songMusicTitleTv;
     this.songNextIv = songNextIv;
     this.songPauseIv = songPauseIv;
     this.songPlayerLayout = songPlayerLayout;
     this.songPreviousIv = songPreviousIv;
     this.songProgressSb = songProgressSb;
     this.songRepeatIv = songRepeatIv;
+    this.songSingerNameTv = songSingerNameTv;
     this.songSingerPlusIv = songSingerPlusIv;
     this.songStartTimeTv = songStartTimeTv;
   }
@@ -187,27 +188,9 @@ public final class ActivitySongBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lower_ib;
-      ImageButton lowerIb = ViewBindings.findChildViewById(rootView, id);
-      if (lowerIb == null) {
-        break missingId;
-      }
-
       id = R.id.lyrics_01_iv;
       TextView lyrics01Iv = ViewBindings.findChildViewById(rootView, id);
       if (lyrics01Iv == null) {
-        break missingId;
-      }
-
-      id = R.id.music_title_tv;
-      TextView musicTitleTv = ViewBindings.findChildViewById(rootView, id);
-      if (musicTitleTv == null) {
-        break missingId;
-      }
-
-      id = R.id.player_like_iv;
-      ImageView playerLikeIv = ViewBindings.findChildViewById(rootView, id);
-      if (playerLikeIv == null) {
         break missingId;
       }
 
@@ -247,21 +230,27 @@ public final class ActivitySongBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.singer_name_tv;
-      TextView singerNameTv = ViewBindings.findChildViewById(rootView, id);
-      if (singerNameTv == null) {
+      id = R.id.song_album_iv;
+      ImageView songAlbumIv = ViewBindings.findChildViewById(rootView, id);
+      if (songAlbumIv == null) {
         break missingId;
       }
 
-      id = R.id.song_album_IU_iv;
-      ImageView songAlbumIUIv = ViewBindings.findChildViewById(rootView, id);
-      if (songAlbumIUIv == null) {
+      id = R.id.song_down_ib;
+      ImageButton songDownIb = ViewBindings.findChildViewById(rootView, id);
+      if (songDownIb == null) {
         break missingId;
       }
 
       id = R.id.song_end_time_tv;
       TextView songEndTimeTv = ViewBindings.findChildViewById(rootView, id);
       if (songEndTimeTv == null) {
+        break missingId;
+      }
+
+      id = R.id.song_like_iv;
+      ImageView songLikeIv = ViewBindings.findChildViewById(rootView, id);
+      if (songLikeIv == null) {
         break missingId;
       }
 
@@ -274,6 +263,12 @@ public final class ActivitySongBinding implements ViewBinding {
       id = R.id.song_music_lyrics_02_iv;
       TextView songMusicLyrics02Iv = ViewBindings.findChildViewById(rootView, id);
       if (songMusicLyrics02Iv == null) {
+        break missingId;
+      }
+
+      id = R.id.song_music_title_tv;
+      TextView songMusicTitleTv = ViewBindings.findChildViewById(rootView, id);
+      if (songMusicTitleTv == null) {
         break missingId;
       }
 
@@ -313,6 +308,12 @@ public final class ActivitySongBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.song_singer_name_tv;
+      TextView songSingerNameTv = ViewBindings.findChildViewById(rootView, id);
+      if (songSingerNameTv == null) {
+        break missingId;
+      }
+
       id = R.id.song_singer_plus_iv;
       ImageView songSingerPlusIv = ViewBindings.findChildViewById(rootView, id);
       if (songSingerPlusIv == null) {
@@ -326,10 +327,10 @@ public final class ActivitySongBinding implements ViewBinding {
       }
 
       return new ActivitySongBinding((ConstraintLayout) rootView, eqIb, instagramIv, listIv,
-          lowerIb, lyrics01Iv, musicTitleTv, playerLikeIv, playerLikeIvLayout, playerUnlikeIv,
-          plusIb, randomIv, relatedIv, settingIb, singerNameTv, songAlbumIUIv, songEndTimeTv,
-          songMiniplayerIv, songMusicLyrics02Iv, songNextIv, songPauseIv, songPlayerLayout,
-          songPreviousIv, songProgressSb, songRepeatIv, songSingerPlusIv, songStartTimeTv);
+          lyrics01Iv, playerLikeIvLayout, playerUnlikeIv, plusIb, randomIv, relatedIv, settingIb,
+          songAlbumIv, songDownIb, songEndTimeTv, songLikeIv, songMiniplayerIv, songMusicLyrics02Iv,
+          songMusicTitleTv, songNextIv, songPauseIv, songPlayerLayout, songPreviousIv,
+          songProgressSb, songRepeatIv, songSingerNameTv, songSingerPlusIv, songStartTimeTv);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
