@@ -11,7 +11,7 @@ import com.umc.floclone.databinding.FragmentLockerBinding
 
 class LockerFragment : Fragment() {
     lateinit var binding: FragmentLockerBinding
-    private val information = arrayListOf("저장한 곡", "음악파일")
+    private val information = arrayListOf("저장한 곡", "좋아요")
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,6 +22,11 @@ class LockerFragment : Fragment() {
 
         val lockerAdapter = LockerViewpagerAdapter(this)
         binding.lockerContentVp.adapter = lockerAdapter
+
+        val bottomSheetFragment = BottomSheetFragment()
+        binding.lockerSelectAllTv.setOnClickListener {
+            bottomSheetFragment.show(requireFragmentManager(), "BottomSheetDialog")
+        }
 
         TabLayoutMediator(binding.lockerContentTb, binding.lockerContentVp) {
             tab, position ->

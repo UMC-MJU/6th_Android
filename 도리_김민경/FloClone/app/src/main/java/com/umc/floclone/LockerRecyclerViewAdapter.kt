@@ -7,9 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.umc.floclone.databinding.ItemLockerBinding
 import java.util.ArrayList
 
-class LockerRecyclerViewAdapter(private val albumList: ArrayList<Locker>): RecyclerView.Adapter<LockerRecyclerViewAdapter.ViewHolder>() {
+class LockerRecyclerViewAdapter(): RecyclerView.Adapter<LockerRecyclerViewAdapter.ViewHolder>() {
     // 리사이클러뷰 스위치 오류 해결
     private val switchStatus = SparseBooleanArray()
+    private val songs = ArrayList<Song>()
 
     interface MyItemClickListener {
         fun onRemoveLocker(position: Int)
@@ -20,8 +21,15 @@ class LockerRecyclerViewAdapter(private val albumList: ArrayList<Locker>): Recyc
         mItemClickListener = itemClickListener
     }
 
-    fun removeItem(position: Int) {
-        albumList.removeAt(position)
+    fun addSongs(songs: ArrayList<Song>) {
+        this.songs.clear()
+        this.songs.addAll(songs)
+
+        notifyDataSetChanged()
+    }
+
+    private fun removeSong(position: Int) {
+        songs.removeAt(position)
         notifyDataSetChanged()
     }
 
@@ -34,8 +42,11 @@ class LockerRecyclerViewAdapter(private val albumList: ArrayList<Locker>): Recyc
     }
 
     override fun onBindViewHolder(holder: LockerRecyclerViewAdapter.ViewHolder, position: Int) {
-        holder.bind(albumList[position])
-        holder.binding.lockerAlbumMoreIv.setOnClickListener { mItemClickListener.onRemoveLocker(position) }
+        holder.bind(songs[position])
+        holder.binding.lockerAlbumMoreIv.setOnClickListener {
+            mItemClickListener.onRemoveLocker(songs[position].id)   // 좋아요 취소
+            removeSong(position)      // 현재 화면에서 position에 해당하는 아이템 제거
+        }
 
         val switch = holder.binding.switchUser
         switch.isChecked = switchStatus[position]
@@ -49,13 +60,13 @@ class LockerRecyclerViewAdapter(private val albumList: ArrayList<Locker>): Recyc
         }
     }
 
-    override fun getItemCount(): Int = albumList.size
+    override fun getItemCount(): Int = songs.size
 
     inner class ViewHolder(val binding: ItemLockerBinding): RecyclerView.ViewHolder(binding.root) {
-        fun bind(locker: Locker) {
-            binding.lockerAlbumTitleTv.text = locker.title
-            binding.lockerAlbumSingerTv.text = locker.singer
-            binding.lockerAlbumImgIv.setImageResource(locker.coverImg!!)
+        fun bind(song: Song) {
+            binding.lockerAlbumTitleTv.text = song.title
+            binding.lockerAlbumSingerTv.text = song.singer
+            binding.lockerAlbumImgIv.setImageResource(song.coverImg!!)
         }
     }
 }
