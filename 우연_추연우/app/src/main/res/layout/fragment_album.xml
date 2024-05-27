@@ -107,119 +107,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/album_album_iv"
         app:layout_constraintEnd_toEndOf="@+id/album_album_iv" />
 
-    <LinearLayout
-        android:id="@+id/song_infolayout_ll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/album_album_iv">
-
-        <TextView
-            android:id="@+id/song_includSong_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="수록곡"
-            android:textSize="20sp"/>
-
-        <TextView
-            android:id="@+id/song_moreinfo_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="90dp"
-            android:text="상세정보"
-            android:textSize="20sp"/>
-
-        <TextView
-            android:id="@+id/song_video_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="90dp"
-            android:text="영상"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/song_myibterestmix_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/song_infolayout_ll">
-
-
-        <TextView
-            android:id="@+id/song_myibterest_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:text="내 취향 MIX"
-            android:textColor="@color/black" />
-
-        <ImageView
-            android:id="@+id/song_mix_iv"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/btn_toggle_off"/>
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/song_check_iv"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/btn_playlist_select_off"
-        android:layout_marginStart="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/song_myibterestmix_layout"/>
-
-    <TextView
-        android:id="@+id/song_checkall_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="전체선택"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/song_check_iv"
-        app:layout_constraintTop_toBottomOf="@id/song_myibterestmix_layout"/>
-
-    <LinearLayout
-        android:id="@+id/song_music_list_ll"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/song_checkall_tv">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/song_List_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/song_list_order"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:text="01"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
-<!--
-        <com.google.android.material.tabs.TabLayout
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/album_content_tb"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -227,20 +115,18 @@
         app:tabSelectedTextColor="#3f3fff"
         app:tabIndicatorColor="#3f3fff"
         app:tabRippleColor="#00ff0000"
-        app:layout_constraintEnd_toEndOf="@+id/album_album_iv"
-        app:layout_constraintStart_toStartOf="@+id/album_album_iv"
-        app:layout_constraintTop_toBottomOf="@+id/album_album_iv"/>
+        app:layout_constraintEnd_toEndOf="@id/album_album_iv"
+        app:layout_constraintStart_toStartOf="@id/album_album_iv"
+        app:layout_constraintTop_toBottomOf="@id/album_album_iv"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/album_content_vp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/album_content_tb"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/> -->
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/album_content_tb"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
