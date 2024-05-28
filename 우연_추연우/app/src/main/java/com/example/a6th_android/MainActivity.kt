@@ -4,11 +4,13 @@ import LookaroundFragment
 import SearchFragment
 import android.content.Intent
 import android.media.MediaPlayer
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.a6th_android.album.Album
 import com.example.a6th_android.databinding.ActivityMainBinding
 import com.example.a6th_android.home.HomeFragment
@@ -59,10 +61,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.mainMiniplayerBtn.setOnClickListener {
+            serviceStart()
             setPlayerStatus(true)
         }
 
         binding.mainPauseBtn.setOnClickListener {
+            serviceStop()
             setPlayerStatus(false)
         }
 
@@ -206,6 +210,21 @@ class MainActivity : AppCompatActivity() {
         binding.mainMiniplayerSingerTv.text = album.singer
         binding.mainMiniplayerProgressSb.progress = 0
     }
+
+    fun serviceStart() {
+        val intent = Intent(this, ForeGround::class.java)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            ContextCompat.startForegroundService(this, intent)
+        } else {
+            startService(intent)
+        }
+    }
+
+    fun serviceStop() {
+        val intent = Intent(this, ForeGround::class.java)
+        stopService(intent)
+    }
+
 
     private fun initBottomNavigation(){
 

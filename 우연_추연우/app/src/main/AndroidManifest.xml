@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.a6th_android">
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
 
     <application
         android:allowBackup="true"
@@ -14,8 +14,7 @@
         <service
             android:name=".ForeGround"
             android:foregroundServiceType="mediaPlayback"
-            android:enabled="true"
-            android:exported="true"/>
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -25,8 +25,7 @@ class StorageFragment : Fragment() {
         binding.storageContentVp.adapter = storageAdapter
 
         TabLayoutMediator(binding.storageContentTb, binding.storageContentVp) {
-                tab, position ->
-            tab.text = information[position]
+                tab, position -> tab.text = information[position]
         }.attach()
 
         val bottomSheetFragment = BottomSheetFragment()
