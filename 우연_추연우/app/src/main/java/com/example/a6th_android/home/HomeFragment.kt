@@ -1,6 +1,5 @@
 package com.example.a6th_android.home
 
-import AlbumFragment
 import AlbumRVAdapter
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +12,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.a6th_android.MainActivity
 import com.example.a6th_android.R
 import com.example.a6th_android.album.Album
+import com.example.a6th_android.album.AlbumFragment
 import com.example.a6th_android.banner.BannerFragment
 import com.example.a6th_android.banner.BannerVPAdapter
 import com.example.a6th_android.databinding.FragmentHomeBinding

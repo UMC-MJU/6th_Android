@@ -184,7 +184,6 @@ class SongActivity : AppCompatActivity() {
 
     inner class Timer(private val playTime: Int,var isPlaying: Boolean = true):Thread(){
 
-        private var second : Int = 0
         private var mills: Float = 0f
 
         override fun run() {
@@ -192,7 +191,7 @@ class SongActivity : AppCompatActivity() {
             try {
                 while (true){
 
-                    if (second >= playTime){
+                    if (songs[nowPos].second >= playTime){
                         break
                     }
 
@@ -206,9 +205,9 @@ class SongActivity : AppCompatActivity() {
 
                         if (mills % 1000 == 0f){
                             runOnUiThread {
-                                binding.songStartTimeTv.text = String.format("%02d:%02d",second / 60, second % 60)
+                                binding.songStartTimeTv.text = String.format("%02d:%02d",songs[nowPos].second / 60, songs[nowPos].second % 60)
                             }
-                            second++
+                            songs[nowPos].second++
                         }
 
                     }
@@ -221,7 +220,4 @@ class SongActivity : AppCompatActivity() {
 
         }
     }
-
-
-
 }
