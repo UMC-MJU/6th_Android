@@ -38,16 +38,16 @@ class SavedMusicFragment : Fragment() {
     }
 
     private fun initRecyclerview(){
-        binding.savedMusicAlbumRv.layoutManager = LinearLayoutManager(requireActivity())
-        val lockerAlbumRVAdapter = SavedMusicRVAdapter()
+        binding.storageSavedAlbumRecyclerView.layoutManager = LinearLayoutManager(requireActivity())
+        val storageAlbumRVAdapter = SavedMusicRVAdapter()
 
-        lockerAlbumRVAdapter.setMyItemClickListener(object : SavedMusicRVAdapter.MyItemClickListener {
+        storageAlbumRVAdapter.setMyItemClickListener(object : SavedMusicRVAdapter.MyItemClickListener {
 
             override fun onRemoveSong(songId: Int) {
                 songDB.songDao().updateIsLikeById(false, songId)
             }
         })
-        binding.savedMusicAlbumRv.adapter = lockerAlbumRVAdapter
-        lockerAlbumRVAdapter.addSongs(songDB.songDao().getLikedSongs(true) as ArrayList<Song>)
+        binding.storageSavedAlbumRecyclerView.adapter = storageAlbumRVAdapter
+        storageAlbumRVAdapter.addSongs(songDB.songDao().getLikedSongs(true) as ArrayList<Song>)
     }
 }

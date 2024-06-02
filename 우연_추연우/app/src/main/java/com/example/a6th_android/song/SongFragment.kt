@@ -1,15 +1,10 @@
 package com.example.a6th_android.song
 
-import AlbumFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.setFragmentResult
-import com.example.a6th_android.MainActivity
-import com.example.a6th_android.R
 import com.example.a6th_android.databinding.FragmentSongBinding
 
 class SongFragment : Fragment() {
