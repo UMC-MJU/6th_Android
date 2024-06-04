@@ -12,8 +12,7 @@ import com.umc.floclone.databinding.ItemLockerBinding
 
 class SavedSongLockerFragment: Fragment() {
     lateinit var binding: FragmentLockerSongSavedBinding
-
-    private var albumDatas = ArrayList<Locker>()
+    lateinit var songDB: SongDatabase
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,36 +21,28 @@ class SavedSongLockerFragment: Fragment() {
     ): View? {
         binding = FragmentLockerSongSavedBinding.inflate(layoutInflater)
 
-        // 데이터 리스트 생성 더미 데이터
-        albumDatas.apply {
-            add(Locker("How?", "BOYNEXTDOOR", R.drawable.img_boynextdoor_album))
-            add(Locker("성장", "D.O.", R.drawable.img_do_album))
-            add(Locker("Fourever", "데이식스 (DAY6)", R.drawable.img_day6_album))
-            add(Locker("Armageddon", "에스파 (aespa)", R.drawable.img_aespa_album))
-            add(Locker("How?", "BOYNEXTDOOR", R.drawable.img_boynextdoor_album))
-            add(Locker("성장", "D.O.", R.drawable.img_do_album))
-            add(Locker("Fourever", "데이식스 (DAY6)", R.drawable.img_day6_album))
-            add(Locker("Armageddon", "에스파 (aespa)", R.drawable.img_aespa_album))
-            add(Locker("How?", "BOYNEXTDOOR", R.drawable.img_boynextdoor_album))
-            add(Locker("성장", "D.O.", R.drawable.img_do_album))
-            add(Locker("Fourever", "데이식스 (DAY6)", R.drawable.img_day6_album))
-            add(Locker("Armageddon", "에스파 (aespa)", R.drawable.img_aespa_album))
-            add(Locker("How?", "BOYNEXTDOOR", R.drawable.img_boynextdoor_album))
-            add(Locker("성장", "D.O.", R.drawable.img_do_album))
-            add(Locker("Fourever", "데이식스 (DAY6)", R.drawable.img_day6_album))
-            add(Locker("Armageddon", "에스파 (aespa)", R.drawable.img_aespa_album))
-        }
+        // Database에 있는 정보 가져오기
+        songDB = SongDatabase.getInstance(requireContext())!!
 
-        val lockerRecyclerViewAdapter = LockerRecyclerViewAdapter(albumDatas)
-        binding.lockerSavedSongRv.adapter = lockerRecyclerViewAdapter
-        binding.lockerSavedSongRv.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        return binding.root
+    }
 
-        lockerRecyclerViewAdapter.setMyItemClickListener(object : LockerRecyclerViewAdapter.MyItemClickListener {
-            override fun onRemoveLocker(position: Int) {
-                lockerRecyclerViewAdapter.removeItem(position)
+    override fun onStart() {
+        super.onStart()
+        initRecyclerView()
+    }
+
+    private fun initRecyclerView() {
+        binding.lockerSavedSongRv.layoutManager = LinearLayoutManager(requireActivity())
+        val lockerAlbumRecyclerViewAdapter = LockerRecyclerViewAdapter()
+
+        lockerAlbumRecyclerViewAdapter.setMyItemClickListener(object : LockerRecyclerViewAdapter.MyItemClickListener {
+            override fun onRemoveLocker(songId: Int) {
+                songDB.songDao().updateIsLikeById(false, songId)
             }
         })
 
-        return binding.root
+        binding.lockerSavedSongRv.adapter = lockerAlbumRecyclerViewAdapter
+        lockerAlbumRecyclerViewAdapter.addSongs(songDB.songDao().getLikedSongs(true) as ArrayList<Song>)
     }
 }

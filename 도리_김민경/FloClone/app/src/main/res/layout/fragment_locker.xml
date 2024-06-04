@@ -45,11 +45,88 @@
         app:layout_constraintTop_toBottomOf="@id/locker_title_tv">
     </com.google.android.material.tabs.TabLayout>
 
+    <LinearLayout
+        android:id="@+id/locker_select_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/locker_content_tb"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/locker_select_all_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/btn_playlist_select_off"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:id="@+id/locker_select_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체선택"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locker_select_layout_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/locker_content_tb"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/locker_select_all_on_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/btn_playlist_select_off"
+            app:tint="@color/purple" />
+
+        <TextView
+            android:id="@+id/locker_select_all_on_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체선택"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/locker_content_tb"
+        app:layout_constraintStart_toEndOf="@id/locker_select_layout">
+
+        <ImageView
+            android:id="@+id/locker_play_all_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/btn_editbar_play"
+            app:layout_constraintTop_toBottomOf="@id/locker_content_tb"
+            app:layout_constraintStart_toEndOf="@id/locker_select_all_tv"
+            app:tint="@color/grey" />
+
+        <TextView
+            android:id="@+id/locker_play_all_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체재생"
+            android:textSize="15sp"
+            android:textColor="@color/grey"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/locker_content_vp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/locker_content_tb"
+        app:layout_constraintTop_toBottomOf="@id/locker_select_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">

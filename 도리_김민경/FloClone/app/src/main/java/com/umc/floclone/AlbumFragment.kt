@@ -25,6 +25,8 @@ class AlbumFragment : Fragment() {
         // 변경된 데이터 받아오기
         val albumJson = arguments?.getString("album")
         val album = gson.fromJson(albumJson, Album::class.java)
+//        val albumDB = AlbumDatabase.getInstance(this)!!
+//        val album = albumDB.albumDao().getAlbum(albumIdx)
         setInit(album)
 
         binding.albumBackIv.setOnClickListener {

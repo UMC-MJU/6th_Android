@@ -21,6 +21,8 @@ class HomeFragment(homePannelCl: Int) : Fragment(), AlbumRecyclerViewAdapter.Com
     private val timer = Timer()
     private val handler = Handler(Looper.getMainLooper())
 
+    private lateinit var albumDB: SongDatabase
+
     private var albumDatas = ArrayList<Album>()
 
     override fun onCreateView(
@@ -30,13 +32,17 @@ class HomeFragment(homePannelCl: Int) : Fragment(), AlbumRecyclerViewAdapter.Com
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
+        albumDB =SongDatabase.getInstance(requireContext())!!
+        albumDatas.addAll(albumDB.albumDao().getAlbums())
+
+
         // 데이터 리스트 생성 더미 데이터
-        albumDatas.apply {
-            add(Album("How?", "BOYNEXTDOOR", R.drawable.img_boynextdoor_album))
-            add(Album("성장", "D.O.", R.drawable.img_do_album))
-            add(Album("Fourever", "데이식스 (DAY6)", R.drawable.img_day6_album))
-            add(Album("Armageddon", "에스파 (aespa)", R.drawable.img_aespa_album))
-        }
+//        albumDatas.apply {
+//            add(Album("How?", "BOYNEXTDOOR", R.drawable.img_boynextdoor_album))
+//            add(Album("성장", "D.O.", R.drawable.img_do_album))
+//            add(Album("Fourever", "데이식스 (DAY6)", R.drawable.img_day6_album))
+//            add(Album("Armageddon", "에스파 (aespa)", R.drawable.img_aespa_album))
+//        }
 
         val albumRecyclerViewAdapter = AlbumRecyclerViewAdapter(albumDatas)
         binding.homeTodayMusicAlbumRv.adapter = albumRecyclerViewAdapter
