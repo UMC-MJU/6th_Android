@@ -19,4 +19,5 @@ interface AlbumDao {
 
     @Query("SELECT * FROM AlbumTable")
     fun getAlbums(): List<Album>
+
 }

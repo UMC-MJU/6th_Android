@@ -5,9 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Song::class], version = 1)    // entities: 데이터베이스에서 관리할 테이블 정의, version: 데이터베이스의 버전
+@Database(entities = [Song::class, Album::class], version = 1)    // entities: 데이터베이스에서 관리할 테이블 정의, version: 데이터베이스의 버전
 abstract class SongDatabase: RoomDatabase() {       // RoomDatabase 상속 받음(무조건 abstract class로 정의되어야 함)
     abstract fun songDao(): SongDao
+    abstract fun albumDao(): AlbumDao
 
     // singleton pattern 구현
     companion object {

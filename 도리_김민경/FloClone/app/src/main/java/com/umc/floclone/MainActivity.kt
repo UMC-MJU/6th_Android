@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
     private var song: Song = Song()
     private var gson: Gson = Gson()
 
-    val songs = arrayListOf<Song>()
+    var songs = arrayListOf<Song>()
     var nowPos = 0
     lateinit var songDB: SongDatabase
 
-    val albums = arrayListOf<Album>()
-    lateinit var albumDB: AlbumDatabase
+    var albums = arrayListOf<Album>()
+//    lateinit var albumDB: AlbumDatabase
 
     // 음악 재생을 위한 mediaPlayer
     private var mediaPlayer: MediaPlayer? = null
@@ -37,10 +37,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        inputDummySongs()
-        initMiniPlayList()
 
         inputDummyAlbums()
+        inputDummySongs()
+//        initMiniPlayList()
+
 
 //        binding.miniPlayerPlayIv.setOnClickListener {
 //            val intent = Intent(this, ForeService::class.java)
@@ -203,7 +204,6 @@ class MainActivity : AppCompatActivity() {
     private fun inputDummySongs() {
         val songDB = SongDatabase.getInstance(this)!!
         val songs = songDB.songDao().getSongs()
-
         // songs에 데이터가 이미 존재하면 더미 데이터를 삽입할 필요가 없음
         if (songs.isNotEmpty()) return
 
@@ -218,7 +218,7 @@ class MainActivity : AppCompatActivity() {
                 "music_iu",
                 R.drawable.img_album_exp2,
                 false,
-                1
+                0
             )
         )
 
@@ -232,7 +232,7 @@ class MainActivity : AppCompatActivity() {
                 "music_iu",
                 R.drawable.img_album_exp2,
                 false,
-                1
+                0
                 )
         )
 
@@ -246,7 +246,7 @@ class MainActivity : AppCompatActivity() {
                 "music_ewf",
                 R.drawable.img_boynextdoor_album,
                 false,
-                2
+                1
             )
         )
 
@@ -260,7 +260,7 @@ class MainActivity : AppCompatActivity() {
                 "music_ewf",
                 R.drawable.img_boynextdoor_album,
                 false,
-                2
+                1
             )
         )
 
@@ -274,7 +274,7 @@ class MainActivity : AppCompatActivity() {
                 "music_popcorn",
                 R.drawable.img_do_album,
                 false,
-                3
+                2
             )
         )
 
@@ -288,7 +288,7 @@ class MainActivity : AppCompatActivity() {
                 "music_popcorn",
                 R.drawable.img_do_album,
                 false,
-                3
+                2
             )
         )
 
@@ -333,9 +333,9 @@ class MainActivity : AppCompatActivity() {
                 5
             )
         )
-
-        val _songs = songDB.songDao().getSongs()
-        Log.d("DB data", _songs.toString())
+//
+//        val _songs = songDB.songDao().getSongs()
+//        Log.d("DB data", _songs.toString())
     }
 
     private fun initMiniPlayList() {
@@ -472,50 +472,50 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun inputDummyAlbums() {
-        albumDB = AlbumDatabase.getInstance(this)!!
-        val albums = albumDB.albumDao().getAlbums()
+        val songDB = SongDatabase.getInstance(this)!!
+        val albums = songDB.albumDao().getAlbums()
 
         if (albums.isNotEmpty()) return
 
-        albumDB.albumDao().insert(
+        songDB.albumDao().insert(
             Album(
-                1,
+                0,
                 "IU 5th Album 'LILAC'",
                 "아이유 (IU)",
                 R.drawable.img_album_exp2,
             )
         )
 
-        albumDB.albumDao().insert(
+        songDB.albumDao().insert(
             Album(
-                2,
+                1,
                 "How?",
                 "BOYNEXTDOOR",
                 R.drawable.img_boynextdoor_album,
             )
         )
 
-        albumDB.albumDao().insert(
+        songDB.albumDao().insert(
             Album(
-                3,
+                2,
                 "성장",
                 "D.O.",
                 R.drawable.img_do_album,
             )
         )
 
-        albumDB.albumDao().insert(
+        songDB.albumDao().insert(
             Album(
-                4,
+                3,
                 "Fourever",
                 "데이식스 (Day6)",
                 R.drawable.img_day6_album,
             )
         )
 
-        albumDB.albumDao().insert(
+        songDB.albumDao().insert(
             Album(
-                5,
+                4,
                 "Armageddon",
                 "에스파 (aespa)",
                 R.drawable.img_aespa_album,

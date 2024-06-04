@@ -21,6 +21,8 @@ class HomeFragment(homePannelCl: Int) : Fragment(), AlbumRecyclerViewAdapter.Com
     private val timer = Timer()
     private val handler = Handler(Looper.getMainLooper())
 
+    private lateinit var albumDB: SongDatabase
+
     private var albumDatas = ArrayList<Album>()
 
     override fun onCreateView(
@@ -29,6 +31,10 @@ class HomeFragment(homePannelCl: Int) : Fragment(), AlbumRecyclerViewAdapter.Com
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(layoutInflater)
+
+        albumDB =SongDatabase.getInstance(requireContext())!!
+        albumDatas.addAll(albumDB.albumDao().getAlbums())
+
 
         // 데이터 리스트 생성 더미 데이터
 //        albumDatas.apply {
