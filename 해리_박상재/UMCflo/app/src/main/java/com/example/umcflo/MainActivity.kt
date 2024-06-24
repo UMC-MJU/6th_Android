@@ -10,6 +10,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.example.umcflo.databinding.ActivityMainBinding
 import com.google.gson.Gson
 
+
 class MainActivity : AppCompatActivity() {
     lateinit var activityResultLauncher:ActivityResultLauncher<Intent>
     lateinit var  binding: ActivityMainBinding
@@ -48,10 +49,7 @@ class MainActivity : AppCompatActivity() {
             activityResultLauncher.launch(intent)
         }
 
-
     }
-
-
 
     private fun initBottomNavigation(){
         supportFragmentManager.beginTransaction()

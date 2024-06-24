@@ -18,6 +18,8 @@ class LookFragment : Fragment() {
     ): View? {
         binding = FragmentLookBinding.inflate(inflater, container, false)
 
+
         return binding.root
     }
+
 }

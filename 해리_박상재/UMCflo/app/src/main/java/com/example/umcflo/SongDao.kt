@@ -1,6 +1,7 @@
 package com.example.umcflo
 
 import androidx.room.Dao
+import androidx.room.Database
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
@@ -28,4 +29,6 @@ interface SongDao {
 
     @Query("SELECT * FROM SongTable WHERE isLike= :isLike")
     fun getLikedSongs(isLike: Boolean): List<Song>
+
+
 }
